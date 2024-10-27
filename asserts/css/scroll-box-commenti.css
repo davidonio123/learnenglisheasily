@@ -1,0 +1,168 @@
+:root{
+    --animation-count: 0;
+    --time: 0;
+}
+
+#box-con-le-persone{
+    position: absolute;
+    bottom: 50px;
+    right: 20px;
+    width: 45vh;
+    height: 60vh;
+    background-color: #FFFFFF1e;
+    overflow: hidden;
+    border-radius: 35px;
+    padding: 5px 0 5px 0;
+    z-index: 2;
+}
+#box-con-le-persone>div{
+    width: auto;
+    height: auto;
+    position: absolute; 
+    display: grid;
+    columns: auto;
+    gap: 5px;
+    padding: 5px;
+    animation: linear;
+    animation-name: scorrimento;
+    animation-duration: var(--time);
+    animation-iteration-count: infinite;
+}
+
+@keyframes scorrimento{
+    from{
+        translate: 0 0;
+    }
+    5%{
+        translate: 0px 0vh;
+    }
+    50%{
+        translate: 0px var(--animation-count);
+    }
+    55%{
+        translate: 0px var(--animation-count);
+    }
+    to{
+        translate: 0 0;
+    }
+}
+
+/*          COMMENTI            */
+#commento-box{
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    display: inline-grid;
+    grid-template-columns: auto;
+    align-items: center;
+    gap: 10px;
+    padding: 0px;
+    overflow: hidden;
+    margin: 5px 10px 5px 10px;
+    translate: 0 var(--scroll) 0;
+    transition: all 0.2s;
+}
+
+#commento-box>div{
+    position: relative;
+    width: 1fr;
+    height: auto;
+    display: inline-grid;
+    grid-template-columns: auto;
+    align-items: start;
+    gap: 10px;
+    padding: 0;
+    background-color: #FFFFFF1e;
+    border-radius: 30px;
+}
+
+.commento{
+    position: relative;
+    width: auto;
+    height: auto;
+    display: inline-grid;
+    grid-template-columns: auto;
+    padding: 0;
+    align-items: start;
+    padding: 0;
+    overflow: hidden;
+}
+.testa{
+    display: inline-grid;
+    grid-template-columns: auto auto;
+    padding: 0;
+    justify-content: start;
+    align-items: flex-start;
+    gap: 10px;
+    overflow: hidden;
+    width: auto;
+    height: auto;
+    margin: 11px 10px 11px 8px;
+}
+
+.immagine{
+    position: relative;
+    width: 51px;
+    height: 51px;
+    border-radius: 30px;
+    margin-left: 2px;
+}
+
+.testa>div{
+    display: inline-grid;
+    grid-template-columns: auto;
+    padding: 0;
+}
+
+.nome-commento{
+    position: relative;
+    width: 1fr;
+    height: auto;
+    font-family: "Heebo", sans-serif;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 24px;
+    align-content: start;
+}
+.tag-commento{
+    position: relative;
+    width: 1fr;
+    height: auto;
+    font-family: "Sanchez", serif;
+    font-weight: 500;
+    color: rgb(183, 183, 183);
+    font-size: 11px;
+}
+
+.contenuto{
+    position: relative;
+    padding: 0 30px 20px 15px;
+}
+.contenuto>p{
+    position: relative;
+    width: 105%;
+    height: auto;
+    font-family: "Heebo", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    letter-spacing: -0.01em;
+    line-height: 17px;
+    align-content: flex-start;
+    color: #E8E8E8;
+    padding: 0;
+    margin: 0;
+}
+
+.chiuso>div>.commento>.contenuto{
+    overflow: hidden;
+    padding: 0;
+    height: 0;
+}
+
+@media (max-width: 1000px){
+    #box-con-le-persone{
+        height: 0px;
+        padding: 0;
+        margin: 0;
+    }
+}

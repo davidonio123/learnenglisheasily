@@ -1,0 +1,594 @@
+/*          VARIABILI           */
+:root {
+    --button-border-color: rgb(72, 72, 72);
+    --button-border: 3px;
+}
+
+body {
+    background-color: #E9E9E9;
+    font-size: 100%;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+/*              LINK             */
+a {
+    margin: 0 30px 0 30px;
+    border-color: transparent;
+    background-color: transparent;
+    font-family: "NTR", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    color: black;
+    z-index: 2;
+    display: inline;
+    transition: all 1s;
+}
+
+
+a:hover {
+    text-decoration: underline;
+    color: #3941F6;
+}
+
+/*          OGGETTI DI SCENA            */
+#container_blu_scuro {
+    position: absolute;
+    height: 300px;
+    width: 700px;
+    background-color: #3036C6;
+    transform: rotate(-45deg);
+    filter: drop-shadow(0px 16px 015px #0000007c);
+    z-index: 2;
+    left: -480px;
+    top: -50px;
+    animation: linear;
+    animation-name: animate_bocx;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+}
+
+#container_blu_chiaro {
+    position: absolute;
+    height: 300px;
+    width: 700px;
+    background-color: #3941F6;
+    transform: rotate(-45deg);
+    filter: drop-shadow(0px 16px 015px #0000007c);
+    z-index: 2;
+    left: -400px;
+    top: -50px;
+    animation: linear;
+    animation-name: animate_bocccx;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+}
+
+@keyframes animate_box {
+    from {
+        translate: 0 0;
+    }
+
+    50% {
+        translate: 0 10px;
+    }
+
+    to {
+        translate: 0 0;
+    }
+}
+
+/*          TITOLO/LOGO/font vari           */
+#learn,
+#english,
+#with_us {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    z-index: 2;
+}
+
+#learn {
+    font-family: "Montserrat", sans-serif;
+    color: black;
+    font-size: 61px;
+    z-index: 2;
+}
+
+#english,
+.titolo {
+    font-family: "Playfair Display", serif;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 42px;
+    color: #3941F6;
+    z-index: 2;
+}
+
+#with_us {
+    font-family: "Montserrat", sans-serif;
+    color: black;
+    font-size: 24px;
+    z-index: 2;
+}
+
+.titolo {
+    margin: 0;
+    text-align: center;
+    transition: all 1s;
+    z-index: 2;
+}
+
+.paragrafo {
+    font-family: "Heebo", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    line-height: 1.5;
+    margin: 0;
+    transition: all 1s;
+    z-index: 2;
+}
+
+#english {
+    translate: 0 -20px 0;
+    z-index: 2;
+}
+
+#with_us {
+    translate: 0 -25px 0;
+    z-index: 2;
+}
+
+/*          INTESTAZIONE            */
+#intestazione {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: auto;
+    margin-top: 20px;
+    margin-bottom: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 2;
+}
+
+/*estende la massima lunghezza*/
+#container {
+    width: auto;
+    padding: 0 60px 0 60px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 2;
+}
+
+#sinistra,
+#destra {
+    height: fit-content;
+    justify-content: space-between;
+    text-align: center;
+    padding: 50px;
+    z-index: 2;
+}
+
+/*          MENU TELEFONO           */
+#hamburger {
+    position: relative;
+    height: 90px;
+    width: 0px;
+    overflow: hidden;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    translate: -50px -40px;
+    top: 80px;
+    right: -190px;
+    z-index: 2;
+}
+
+#hamburger2 {
+    width: 90px;
+    height: 90px;
+    z-index: 2;
+}
+
+#menu--hamburger {
+    position: absolute;
+    margin: 0;
+    left: 0;
+    top: 230px;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    transition: all 1s cubic-bezier(.225, .61, .335, 1);
+    display: flex;
+    justify-content: end;
+    text-align: end;
+    background: #EFEFEFd2;
+    border-radius: 60px;
+    z-index: 3;
+}
+
+#menu--hamburger div {
+    display: grid;
+    height: fit-content;
+    text-align: end;
+    justify-items: end;
+    z-index: 2;
+}
+
+#menu--hamburger div a {
+    color: black;
+    opacity: 0.8;
+    text-decoration: none;
+    font-family: sans-serif;
+    display: block;
+    padding: 30px;
+    font-size: 60px;
+    width: fit-content;
+    height: fit-content;
+    text-align: end;
+    z-index: 2;
+}
+
+/*          CONTENUTO           */
+#contenuto {
+    width: 100%;
+    height: 300px;
+    position: fixed;
+    top: 270px;
+    display: flex;
+    justify-content: center;
+    z-index: 2;
+}
+
+#hover {
+    overflow: visible;
+    width: 600px;
+    height: auto;
+    margin: 0;
+    display: block;
+    align-items: center;
+    transition: all 1s;
+    position: absolute;
+    min-width: 1200px;
+    z-index: 2;
+}
+
+#hover>div {
+    max-width: 600px;
+    margin-left: 40px;
+    z-index: 2;
+    transition: all 1s;
+}
+
+#hover>div:hover {
+    scale: 1.1;
+}
+
+/*bottone invio*/
+#bottone {
+    /*FONT*/
+    font-family: "Montserrat", sans-serif;
+    color: black;
+    font-weight: 800;
+
+    cursor: pointer;
+    position: relative;
+    margin-left: 0%;
+    ;
+    padding: 10px 20px;
+    background: #3943f6d4;
+    font-size: 28px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    transition: all 1s;
+
+    &:after,
+    &:before {
+        content: " ";
+        width: 10px;
+        height: 10px;
+        position: absolute;
+        border: 0px solid #fff;
+        transition: all 1s;
+    }
+
+    &:after {
+        top: -1px;
+        left: -1px;
+        border-top: var(--button-border) solid var(--button-border-color);
+        border-left: var(--button-border) solid var(--button-border-color);
+    }
+
+    &:before {
+        bottom: -1px;
+        right: -1px;
+        border-bottom: var(--button-border) solid var(--button-border-color);
+        border-right: var(--button-border) solid var(--button-border-color);
+    }
+
+    &:hover {
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 0px;
+
+        &:before,
+        &:after {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+#btn {
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: transparent;
+    margin-left: 18%;
+}
+
+/*BLOB BLUE*/
+#blob-blue-div {
+    position: fixed;
+    right: 0px;
+    bottom: -5px;
+    object-position: bottom;
+    height: 80vh;
+    z-index: 1;
+}
+
+
+/*PALLE ANIMATE*/
+#container-palle {
+    z-index: 2;
+    bottom: 10px;
+    left: 15px;
+    position: absolute;
+    width: 185px;
+    height: 168px;
+    display: flex;
+}
+
+.palla-animata {
+    position: absolute;
+    display: flex;
+    background-color: blue;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    animation-fill-mode: none;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    z-index: 2;
+}
+
+#grande {
+    background-color: #3941F6;
+    width: 150px;
+    height: 150px;
+    box-shadow: inset 10px 0px 16px 0px #8092ed;
+    animation-name: grande;
+    animation-duration: 3.5s;
+}
+
+#media {
+    background-color: #3036C6;
+    width: 86px;
+    height: 86px;
+    right: 0px;
+    box-shadow: inset 10px 0px 16px 0px rgba(140, 140, 194, 0.47);
+    animation-name: media;
+    animation-duration: 3s;
+}
+
+#piccola {
+    background-color: #9A9EFF;
+    width: 52px;
+    height: 52px;
+    bottom: 0px;
+    left: 80px;
+    box-shadow: inset 10px 0px 16px 0px rgba(68, 60, 181, 0.5);
+    animation-name: piccola;
+    animation-duration: 3s;
+}
+
+/*          ANIMAZIONI PALLINE          */
+@keyframes grande {
+    from {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-5px);
+    }
+
+    to {
+        transform: translateY(0px);
+    }
+}
+
+@keyframes media {
+    from {
+        transform: translateY(3px);
+    }
+
+    50% {
+        transform: translateY(0px);
+    }
+
+    to {
+        transform: translateY(3px);
+    }
+}
+
+@keyframes piccola {
+    from {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(5px);
+    }
+
+    to {
+        transform: translateY(0px);
+    }
+}
+
+#pie_di_pagina {
+    position: absolute;
+    width: auto;
+    right: 0px;
+    height: fit-content;
+    bottom: 0px;
+    z-index: 2;
+    display: flex;
+    justify-content: end;
+}
+
+.link-piccoli {
+    position: relative;
+    height: auto;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    margin: 0 -30px 0 0;
+}
+
+.link-piccoli>a {
+    translate: -20px 0px 0px;
+}
+
+.link-piccoli>img {
+    height: 30px;
+    width: auto;
+}
+
+.link-piccoli>a:hover {
+    text-decoration: underline;
+    color: black;
+    transform: scale(1.05);
+}
+
+@media (max-width: 1000px) {
+
+    /*regola il font*/
+    #learn {
+        font-size: 81px;
+    }
+
+    #english {
+        font-size: 62px;
+        translate: 0 -35px 0;
+    }
+
+    #with_us {
+        font-size: 44px;
+        translate: 0 -50px 0;
+    }
+
+    #intestazione {
+        margin-top: 40px;
+    }
+
+    .titolo {
+        font-size: 70px;
+    }
+
+    .paragrafo {
+        font-size: 40px;
+    }
+
+    #bottone {
+        font-size: 55px;
+    }
+
+    a {
+        font-size: 60px;
+        font-weight: 500;
+    }
+
+    :root {
+        --button-border: 10px;
+    }
+
+    /*INTESTAZIONE HIDDEN*/
+    #sinistra,
+    #destra {
+        overflow: hidden;
+        width: 0px;
+        padding: 0px;
+    }
+
+    /*MENU HAMBURGER*/
+    #hamburger {
+        overflow: visible;
+        width: fit-content;
+        right: -190;
+    }
+
+    #container {
+        padding-left: 120px;
+    }
+
+    .menu--open #menu--hamburger {
+        height: 100%;
+    }
+
+    /*PALLINE HIDDEN*/
+    #container-palle {
+        overflow: hidden;
+        height: 0px;
+    }
+
+    /*GIUSTIFICA IL TESTO*/
+    #hover {
+        display: grid;
+        justify-items: center;
+    }
+
+    #hover>div {
+        margin-left: 0px;
+    }
+
+    #contenuto {
+        margin-top: 190px;
+    }
+
+    /*RIDIMENSIONE BLOB*/
+    #blob-blue-div {
+        height: 100%;
+        translate: 170px 1000px;
+    }
+
+    /*PIE DI PAGINA*/
+    #pie_di_pagina {
+        width: 96%;
+        right: 0px;
+        display: block;
+        background-color: #EFEFEF32;
+
+        border-radius: 30px;
+        margin: 20px;
+    }
+
+    .link-piccoli>img {
+        width: 70px;
+        height: auto;
+    }
+
+    .link-piccoli {
+        margin: 0 10px 0 40px;
+    }
+}

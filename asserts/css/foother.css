@@ -1,0 +1,28 @@
+.link-piccoli {
+    height: auto;
+    width:auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 15px;
+}
+
+.link-piccoli>img {
+    height: 30px;
+    width: 30px;
+}
+
+.link-piccoli>a {
+    margin-left: 10px;
+    background-color: transparent;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    color: black;
+    transition: all 1s;
+}
+
+.link-piccoli>a:hover {
+    color: blue;
+    transform: scale(1.05);
+}
