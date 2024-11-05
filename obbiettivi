@@ -1,4 +1,6 @@
 1.	Ottimizzare il php
 2.	Risolvere i problemi delle sessioni
 3.	Creare una funzione criptatore
-4.	Creare una pagina admin
+4.  Creare una funzione che crea completamente la sessione, senza lasciare nulla al caso
+5.	Creare una pagina admin
+6.  Bestemmiare mentre si fanno tutti gli altri punti
