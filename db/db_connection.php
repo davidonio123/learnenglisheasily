@@ -2,12 +2,7 @@
 
 //PDO Connection
 
-// include("./db_date.php");
-
-$servername="localhost";
-$username="root";
-$passworddb="";
-$dbname="utenti";
+include("db_date.php");
 
 try{
     $db = new PDO("mysql:=$servername;dbname=$dbname", $username, $passworddb);
