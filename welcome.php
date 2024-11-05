@@ -34,8 +34,8 @@
             $user = search_row($row);
             if (isset($_GET['settings'])) {
                 /*----------------------
-            SETTINGS
-            ----------------------*/
+                SETTINGS
+                ----------------------*/
             ?>
                 <div class="row">
                     <?php
@@ -150,8 +150,8 @@
             <?php
             } else {
                 /*----------------------
-            PROFILO
-            ----------------------*/
+                PROFILO
+                ----------------------*/
             ?>
                 <div class="row text-center">
                     <div class="col-lg-5">
