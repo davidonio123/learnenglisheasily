@@ -18,7 +18,9 @@ include("../db/db_connection.php");
 session_start();
 $email=$_SESSION['email'];
 
-$encodepass = md5($password1);
+include("../function/cripta.php");
+
+$encodepass = cripta($password1);
 
 $q = "UPDATE utenti SET password = '$encodepass' WHERE email = '$email'";
 $risultato = $db->query($q);

@@ -47,7 +47,7 @@
     <div class="row row_center" style="min-height: 50vh;">
         <?php
         if ($rows > 0) {
-            include("./function/search_comment.php");
+            include("./function/search.php");
             while ($rows = $q->fetch()) {
         ?>
                 <div class="card m-3" style="width: 18rem; height: fit-content;">
@@ -95,7 +95,7 @@
                 session_start();
             $row = $_SESSION['utente'];
         ?>
-            <form class="card m-3" style="width: 18rem; height: fit-content;" action="./function/new_comment.php" method="post">
+            <form class="card m-3" style="width: 18rem; height: fit-content;" action="./page/new_comment.php" method="post">
                 <div style="height: 15rem; overflow: hidden;">
                     <img src="./asserts/img/profili/<?php
                                                     $struct = search_row($row);

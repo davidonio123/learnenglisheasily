@@ -21,9 +21,6 @@ $q->setFetchMode(PDO::FETCH_ASSOC);
 
 $row = $q->fetch();
 
-if($row['comment']!=''){
-    echo "commento gia esistente, aggiornare commento";
-}
 
 $q = $db->prepare("UPDATE utenti SET comment = '$comment' WHERE id = '$id'");
 $q->execute();
