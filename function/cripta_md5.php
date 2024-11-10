@@ -1,3 +1,6 @@
 <php
-function cripta()
+function cripta( $param )
+
+
+
 ></php>
