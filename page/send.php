@@ -34,8 +34,6 @@ if (mail($a, $oggetto, $string, $headers)) {
     header('location: ../contatti.php?invio=no');
 }
 
-echo $nome;
-
 die();
 
 ?>

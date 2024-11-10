@@ -9,7 +9,7 @@ include("../db/db_connection.php");
 /*--------------------
 LOGIN/QUERY
 --------------------*/ 
-// accesso sicuro
+// 'accesso sicuro'
 $_passkey = "gianfrancobello";
 
 // input dei dati

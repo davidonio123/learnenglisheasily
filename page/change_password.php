@@ -11,7 +11,7 @@ session_start();
 $_SESSION['email']=$email;
 
 if($email==""){
-    header("location: ../change_password.php?verfication=empity");
+    header("location: ../change_password.php?verification=empty");
     die();
 }
 
@@ -25,9 +25,7 @@ $q = $db->prepare("SELECT * FROM utenti WHERE email = '$email'");
 $q->execute();
 $q->setFetchMode(PDO::FETCH_ASSOC);
 $rows = $q->rowCount();
-if($rows>0){
-    echo "email trovata <br>";
-}else{
+if($rows==0){
     header("location: ../change_password.php?verification=email");
     die();
 }
@@ -43,7 +41,6 @@ while($i<6){
     $messaggio .= $characters[mt_rand(0,strlen($characters)-1)];
     $i++;
 }
-session_start();
 $_SESSION['CODE']=$messaggio;
 
 /*---------------
@@ -61,7 +58,8 @@ $headers .= 'From: davide.barretta123@iti-marconi.edu.it' . "\r\n";
 if (mail($a, $oggetto, $string, $headers)) {
     header('location: ../code.php');
 } else {
-    echo "errore nell invio delle email, riprovare o contattare un amministratore :>";
+    // echo "errore nell invio delle email, riprovare o contattare un amministratore :>";
+    header('location: ../change_password.php?verification=error');
 }
 
 die();

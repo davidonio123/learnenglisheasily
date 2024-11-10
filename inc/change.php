@@ -18,7 +18,14 @@
                     Inserire una E-mail gia registrata
                     </div>
                     <?php
+                }elseif($verification=="error"){
+                    ?>
+                    <div class="alert alert-danger" role="alert">
+                    Non siamo riusciti ad inviare l'e-mail, riprovare piu tardi
+                    </div>
+                    <?php
                 }
+
             }
             ?>
             <div class="mb-3 pb-3">
