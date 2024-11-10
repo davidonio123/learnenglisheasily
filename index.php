@@ -130,7 +130,7 @@
         <div id="nomi">
             <!--        PERSONE         -->
             <?php
-            include("./function/search_comment.php");
+            include("./function/search.php");
             while ($rows  = $q->fetch()) {
                 if ($rows['comment'] != "") {
             ?>

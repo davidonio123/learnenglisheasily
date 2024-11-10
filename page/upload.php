@@ -1,6 +1,6 @@
 <?php
 
-include("./search_comment.php");
+include("./search.php");
 
 if (session_status() == 1)
     session_start();
