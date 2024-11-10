@@ -2,7 +2,7 @@
     <div class="row">
         <div class="col-lg-6 offset-lg-3">
             <h1 class="text-center">Sign-in</h1>
-            <form action="./function/signin.php" method="post">
+            <form action="./page/signin.php" method="post">
             <?php
             if(isset($_GET["error"])){
                 if($_GET["error"]=="password"){
