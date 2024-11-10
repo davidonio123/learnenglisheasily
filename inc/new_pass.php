@@ -2,7 +2,7 @@
     <div class="row">
         <div class="col-lg-6 offset-lg-3">
             <h1 class="text-center">Insert code</h1>
-            <form action="./function/new_pass.php" method="post">
+            <form action="./page/new_pass.php" method="post">
             <?php
             if(isset($_GET['verification'])){
                 $verification=$_GET['verification'];

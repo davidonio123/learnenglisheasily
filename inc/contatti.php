@@ -28,7 +28,7 @@
             ?>  
 <!--/ALLERT-->
             <h1 class="text-center">Contatti</h1>
-            <form action="./function/send.php" method="post">
+            <form action="./page/send.php" method="post">
             <div class="mb-3">
                 <label for="nome" class="form-label">Nome</label>
                 <input name="nome" class="form-control" id="nome" aria-describedby="nome" placeholder="Inserisci qui il tuo nome completo">
