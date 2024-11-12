@@ -33,15 +33,9 @@ if($rows==0){
 /*---------------
 GENERATORE CODICE
 ---------------*/
+include("../function/genera_pass.php");
 
-$characters = 'QWERTYUIOPASDFGHJKLZXCVBNM1234567890';
-$messaggio='';
-$i=0;
-while($i<6){
-    $messaggio .= $characters[mt_rand(0,strlen($characters)-1)];
-    $i++;
-}
-$_SESSION['CODE']=$messaggio;
+$messaggio = generaPass(6); // gli passo la lunghezza della passKey che vogliamo
 
 /*---------------
 INVIO DELL EMAIL SMTP
