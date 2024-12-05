@@ -49,8 +49,8 @@ if(empty($email)){
     die();
 }
 
-if(!my_check_pwd($password))
-    header("location: ./signin.php?error=password");
+// if(!my_check_pwd($password))
+// echo $string;    header("location: ./signin.php?error=password");
 
 /*-------------------
 CONNESSIONE MYSQLI
@@ -110,7 +110,8 @@ $headers .= 'From: davide.barretta123@iti-marconi.edu.it' . "\r\n";
 if (mail($a, $oggetto, $string, $headers)) {
     header('location: ../code_singin.php');
 } else {
-    echo "errore nell invio delle email, riprovare o contattare un amministratore :>";
+    echo "errore nell invio delle email, riprovare o contattare un amministratore :> <br>";
+    echo $string;
 }
 
 die();
