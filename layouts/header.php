@@ -15,13 +15,13 @@
 <body>
 
 <!--NAVBAR-->
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container">
+<nav class="navbar navbar-expand-lg bg-body-tertiary" id="nav-home">
+  <div class="header" >
     
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
         <li class="nav-item">
           <a class="nav-link <?php if(TITLE == "Home page") echo "active" ?>" aria-current="page" href="./" style="padding:5px 15px 5px 15px;">Home</a>
@@ -62,12 +62,35 @@
   </div>
 </nav>
 <style>
+  /* Stile per centrare la navbar */
+  .navbar {
+    display: flex;
+    justify-content: center; /* Centra orizzontalmente */
+    align-items: center; /* Centra verticalmente */
+    width: 100%; /* Occupa tutta la larghezza della pagina */
+  }
+
+  /* Stile per il contenitore interno della navbar */
+  .header {
+    display: flex;
+    justify-content: center; /* Centra orizzontalmente */
+    width: 100%; /* Occupa tutta la larghezza della navbar */
+  }
+
+  /* Stile per la lista dei link */
+  .navbar-nav {
+    display: flex;
+    justify-content: center; /* Centra orizzontalmente i link */
+    width: 100%; /* Occupa tutta la larghezza disponibile */
+  }
+
+  /* Stile per i link attivi */
   .active {
-        border-left: 1px solid lightgray;
-        border-top: 1px solid lightgray;
-        border-right: 1px solid lightgray;
-        border-top-right-radius: 15px;
-        border-top-left-radius: 15px;
-    }
+    border-left: 1px solid lightgray;
+    border-top: 1px solid lightgray;
+    border-right: 1px solid lightgray;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+  }
 </style>
 <!--/NAVBAR-->
