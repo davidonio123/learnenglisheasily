@@ -20,7 +20,6 @@
 
     <div style="display: flex; justify-content: center;">
         <div class="header">
-
             <div class="menu-container">
                 <button class="menu-button"><p class="text lightGray down">Home</p></button>
                 <button class="menu-button"><p class="text lightGray down">Feedback</p></button>
