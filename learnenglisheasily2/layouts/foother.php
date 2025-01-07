@@ -13,7 +13,7 @@
             </div>
             <div class="col-lg-3">
                 <div class="container text-center">
-                    <img src="./asserts/img/pergamena.png" alt="image not found" style="height: 200px; width:250px;">
+                    <img src="./asserts/img/foother/pergamena.png" alt="image not found" style="height: 200px; width:250px;">
                 </div>
             </div>
             <div class="col-lg-3">
