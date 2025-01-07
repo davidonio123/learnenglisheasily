@@ -20,7 +20,7 @@
         <div class="col-1"></div>
         <!--            IMMAGINE            -->
         <div class="col-7">
-            <img src=".\asserts\img\immagine home.jpg" class="img-fluid" alt="immage not found">
+            <img src=".\asserts\img\home\sezione1.jpg" class="img-fluid" alt="immage not found">
         </div>
     </div>
 </div>

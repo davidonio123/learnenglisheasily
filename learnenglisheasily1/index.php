@@ -138,17 +138,19 @@
                         <div>
                             <div class="commento">
                                 <div class="testa">
-                                    <img class="immagine" src="./asserts/img/profili/<?php
-                                                                                        $struct = search_row($rows);
-                                                                                        echo $struct['profile_image'];
-                                                                                        ?> " draggable="false" style="border: 1px solid;">
+                                    <img class="immagine" src="./asserts/img/profili/
+                                    <?php
+                                    $struct = search_row($rows);
+                                    echo $struct['profile_image'];
+                                    ?> " draggable="false" style="border: 1px solid;">
                                     <div>
                                         <div class="nome-commento"><?php echo $rows['name'] . " " . $rows['surname'] ?></div>
-                                        <div class="tag-commento"><?php
-                                                                    for ($i = 0; $i < count($struct['tags']); $i++)
-                                                                        if ($struct['tags'][$i] != null)
-                                                                            echo $struct['tags'][$i] . ", ";
-                                                                    ?></div>
+                                        <div class="tag-commento">
+                                            <?php
+                                            for ($i = 0; $i < count($struct['tags']); $i++)
+                                                if ($struct['tags'][$i] != null)
+                                                    echo $struct['tags'][$i] . ", ";
+                                            ?></div>
                                     </div>
                                 </div>
                                 <div class="contenuto" style="width: 35vh;">
@@ -160,7 +162,6 @@
             <?php
                 }
             }
-
             ?>
         </div>
     </div>
