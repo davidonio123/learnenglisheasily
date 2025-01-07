@@ -1,8 +1,6 @@
 <!--FOOTER-->
-<header>
-</header>
 <footer>
-    <div class="container pb-5 pt-5 dav_contaniner_foother">
+    <div class="container pb-5 pt-5 dav_contaniner_foother mt-5">
         <div class="row g-5">
             <div class="col-lg-3">
                 <div class="container text-center">
