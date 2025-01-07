@@ -48,7 +48,7 @@
     <script>
         document.addEventListener("DOMContentLoaded", function() {
             const carouselImages = document.getElementById('carouselImages');
-            const imageFolder = './asserts/img/carosello_home/'; 
+            const imageFolder = './asserts/img/carosello_home/';
             // !!! IMPORTANTE !!!
             const imageCount = 4; //Numero di foto inserite nella cartella
 

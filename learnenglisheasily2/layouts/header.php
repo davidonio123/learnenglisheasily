@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="./asserts/js/carosello.js"></script>
     <link rel="stylesheet" href="./asserts/css/foother.css">
     <link rel="stylesheet" href="./asserts/css/main.css">
     <link rel="stylesheet" href="./asserts/css/header.css">
