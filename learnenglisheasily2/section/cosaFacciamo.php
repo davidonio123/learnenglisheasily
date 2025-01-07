@@ -1,4 +1,4 @@
-<div class="container mt-5 pt-5 mb-5 pb-5">
+<div class="container mt-5 pt-5">
     <div class="row justify-content-center">
         <!--            CONTENUTO            -->
         <div class="col-4 d-flex justify-content-center align-items-center mt-5 mb-5">
@@ -13,7 +13,6 @@
                         <button class="button mainColor shadow btn m-1" type="submit">
                             <p>Sign in</p>
                         </button>
-
                     </div>
                 </div>
             </div>

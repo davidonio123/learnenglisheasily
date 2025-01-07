@@ -33,10 +33,10 @@ ti levo di mezzo [t'accir] grazie <3 ) */
     line-height: 1.2em;
 }
 .text.mainColor.up{
-    font-size: calc(var(--big) + var(--up));
+    font-size: var(--big) + var(--up);
 }
 .text.mainColor.down{
-    font-size: calc(var(--big) + var(--down));
+    font-size: var(--big) + var(--down);
 }
 
 .text.mainColorLight{
@@ -47,10 +47,10 @@ ti levo di mezzo [t'accir] grazie <3 ) */
     line-height: 1.5em;
 }
 .text.mainColorLight.up{
-    font-size: calc(var(--medium) + var(--up));
+    font-size: var(--medium) + var(--up);
 }
 .text.mainColorLight.down{
-    font-size: calc(var(--medium) + var(--down)); 
+    font-size: var(--medium) + var(--down); 
 }
 
 .text.lightGray{
@@ -61,10 +61,10 @@ ti levo di mezzo [t'accir] grazie <3 ) */
     line-height: 1.5em;
 }
 .text.lightGray.up{
-    font-size: calc(var(--medium) + var(--up));
+    font-size: var(--medium) + var(--up);
 }
 .text.lightGray.down{
-    font-size: calc(var(--medium) + var(--down));
+    font-size: var(--medium) + var(--down);
 }
 
 .text{
@@ -72,6 +72,7 @@ ti levo di mezzo [t'accir] grazie <3 ) */
     font-optical-sizing: auto;
     font-style: normal;
     margin: 0px;
+    padding: 0px;
     font-weight: 450;
 }
 
