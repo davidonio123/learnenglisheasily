@@ -82,10 +82,17 @@ ti levo di mezzo [t'accir] grazie <3 ) */
     background-color: var(--mainColor);
     color: #FFFFFF;
 }
+.button.mainColor:hover{
+    background-color: var(--mainColor);
+    color: #FFFFFF;
+}
 
 .button.mainColorLight{
     background-color: var(--mainColorLight);
     color: #333333;
+}
+.button.mainColorLight:hover{
+    background-color: var(--mainColorLight);
 }
 
 .button{
