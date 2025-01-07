@@ -7,7 +7,7 @@
                     <img src=".\asserts\img\home\loghi\instagram.jpg" class="image" alt="image not found" draggable="false">
                 </div>
                 <div class="col-9 p-0 d-flex justify-content-start">
-                    <a href="https://www.instagram.com/itmarconipilla/" target="_blank" class="text lightGray" style="margin: 10px; text-decoration: none; ">IT MarconiPilla</a>
+                    <a href="https://www.instagram.com/itmarconipilla/" target="_blank" class="text lightGray" style="margin: 10px;">IT MarconiPilla</a>
                 </div>
             </div>
         </div>
@@ -17,7 +17,7 @@
                     <img src=".\asserts\img\home\loghi\instagram.jpg" class="image" alt="image not found" draggable="false">
                 </div>
                 <div class="col-9 p-0 d-flex justify-content-start">
-                <a href="https://www.instagram.com/carmela.pietrangelo/" target="_blank" class="text lightGray" style="margin: 10px; text-decoration: none; ">Carmela Pietrangelo</a>
+                <a href="https://www.instagram.com/carmela.pietrangelo/" target="_blank" class="text lightGray" style="margin: 10px;">Carmela Pietrangelo</a>
                 </div>
             </div>
         </div>
@@ -27,7 +27,7 @@
                     <img src=".\asserts\img\home\loghi\instagram.jpg" class="image" alt="image not found" draggable="false">
                 </div>
                 <div class="col-9 p-0 d-flex justify-content-start">
-                <a href="https://www.instagram.com/christian._.col/" target="_blank" class="text lightGray" style="margin: 10px; text-decoration: none; ">Christian Colatruglio</a>
+                <a href="https://www.instagram.com/christian._.col/" target="_blank" class="text lightGray" style="margin: 10px;">Christian Colatruglio</a>
                 </div>
             </div>
         </div>
@@ -37,7 +37,7 @@
                     <img src=".\asserts\img\home\loghi\instagram.jpg" class="image" alt="image not found" draggable="false">
                 </div>
                 <div class="col-9 p-0 d-flex justify-content-start">
-                <a href="https://www.instagram.com/davide.barrettaa/" target="_blank" class="text lightGray" style="margin: 10px; text-decoration: none; ">Davide Barretta</a>
+                <a href="https://www.instagram.com/davide.barrettaa/" target="_blank" class="text lightGray" style="margin: 10px;">Davide Barretta</a>
                 </div>
             </div>
         </div>
