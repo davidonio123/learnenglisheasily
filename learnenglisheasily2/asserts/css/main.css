@@ -6,54 +6,65 @@ ti levo di mezzo [t'accir] grazie <3 ) */
 /*import font*/
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
-/*          PALET DI COLORI             */
 :root{
+    /*          PALET DI COLORI             */
+
     --mainColor:        #1B4296;
     --mainColorLight:   #80A1E8;
     --lightGray:        #888888;
+    --light:            #FFFFFF;
+    --dark:             #333333;
+    
+    /*          FONT TESTI                  */
+
+    --big: 50px;
+    --medium: 25px;
+    --small: 15px;
+    --up: 24px;
+    --down: 24px;
 }
 /*      TESTI       */
 
 .text.mainColor{
     color: var(--mainColor);
     font-weight: bold;
-    font-size: 50px;
+    font-size: var(--big);
     letter-spacing: -2px;
     line-height: 1.2em;
 }
 .text.mainColor.up{
-    font-size: 74px;
+    font-size: calc(var(--big) + var(--up));
 }
 .text.mainColor.down{
-    font-size: 24px
+    font-size: calc(var(--big) + var(--down));
 }
 
 .text.mainColorLight{
     color: var(--mainColorLight);
     font-weight: medium;
-    font-size: 24px;
+    font-size: var(--medium);
     letter-spacing: -0.5px;
     line-height: 1.5em;
 }
 .text.mainColorLight.up{
-    font-size: 50px; 
+    font-size: calc(var(--medium) + var(--up));
 }
 .text.mainColorLight.down{
-    font-size: 15px; 
+    font-size: calc(var(--medium) + var(--down)); 
 }
 
 .text.lightGray{
     color: var(--lightGray);
     font-weight: medium;
-    font-size: 24px;
+    font-size: var(--medium);
     letter-spacing: -0.5px;
     line-height: 1.5em;
 }
 .text.lightGray.up{
-    font-size: 50px;
+    font-size: calc(var(--medium) + var(--up));
 }
 .text.lightGray.down{
-    font-size: 15px;
+    font-size: calc(var(--medium) + var(--down));
 }
 
 .text{

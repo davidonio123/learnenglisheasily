@@ -7,12 +7,13 @@
                 <h2 class="text-center text lightGray m-4">Offriamo la possibilità di avere molti contenuti riguardanti l'inglese in un solo posto!</h2>
                 <div class="row text-center">
                     <div>
-                        <button class="button mainColor shadow btn m-1" type="submit">
-                            <p>Sign in</p>
-                        </button>
                         <button class="button mainColorLight btn m-1" type="submit">
                             <p>Learn more</p>
                         </button>
+                        <button class="button mainColor shadow btn m-1" type="submit">
+                            <p>Sign in</p>
+                        </button>
+
                     </div>
                 </div>
             </div>
