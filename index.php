@@ -1,1 +1,1 @@
-<?php header("/learnenglisheasily2/index.php") ?>
+<?php header("./learnenglisheasily2/index.php") ?>
