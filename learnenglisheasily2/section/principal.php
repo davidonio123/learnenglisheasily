@@ -23,10 +23,6 @@
         <div class="col-7">
             <div id="imageCarousel" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner" id="carouselImages">
-                    <img src="./img/carosello_home/immage1.jpg" alt="image not found">
-                    <img src="./img/carosello_home/immage2.jpg" alt="image not found">
-                    <img src="./img/carosello_home/immage3.jpg" alt="image not found">
-                    <img src="./img/carosello_home/immage4.jpg" alt="image not found">
                 </div>
 
                 <a class="carousel-control-prev" href="#imageCarousel" role="button" data-slide="prev">
@@ -53,11 +49,12 @@
             // !!! IMPORTANTE !!!
             const imageCount = 4; //Numero di foto inserite nella cartella
 
-            for (let i = 1; i < imageCount; i++) {
+            for (let i = 1; i <= imageCount; i++) {
                 const div = document.createElement('div');
                 div.className = i === 1 ? 'carousel-item active' : 'carousel-item';
-                div.innerHTML = `<img src="${imageFolder}image${i}.jpg" class="d-block w-100" alt="Image ${i}">`;
+                div.innerHTML = `<img src="${imageFolder}image${i}.jpg" class="d-block w-100" alt="Image ${i}" draggable="false">`;
                 carouselImages.appendChild(div);
+                console.log("immagine aggiunta");
             }
 
             //Intervallo di autoscorrimento
