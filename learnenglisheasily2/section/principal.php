@@ -53,5 +53,3 @@
         }
     </style>
 </div>
-
-Ciao
