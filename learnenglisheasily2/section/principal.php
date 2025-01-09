@@ -22,16 +22,8 @@
         <!--            IMMAGINE            data-bs-interval = <intervallo di scorrimento> -->
         <div class="col-7">
             <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="./asserts/img/carosello_home/image1.jpg" class="d-flex" alt="image not found">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./asserts/img/carosello_home/image2.jpg" class="d-flex" alt="image not found">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./asserts/img/carosello_home/image3.jpg" class="d-felx" alt="image not found">
-                    </div>
+                <div id="carosello" class="carousel-inner">
+                    <!--            IMMAGINI            -->
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
                     data-bs-slide="prev">
@@ -53,3 +45,35 @@
         }
     </style>
 </div>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const carouselImages = document.getElementById('carosello');
+        const imageFolder = './asserts/img/carosello_home/';
+
+        //CONTO LE IMMAGINI NELLA CARTELLA  imageFolder
+
+        var nFile = 1;
+        function conta() {
+            var img = new Image();
+            img.src = imageFolder + 'image' + nFile++ + '.jpg';
+            img.onload = conta;
+            img.onerror = allafinefaiquesto;
+        }
+
+        function allafinefaiquesto() {
+            nFile -= 2;
+
+            for (let i = 1; i <= nFile; i++) {
+                const div = document.createElement('div');
+                const active = i === 1 ? ' active' : '';
+                div.className = 'carousel-item' + active;
+                div.innerHTML = '<img src="' + imageFolder + 'image' + i + '.jpg" class="d-flex" alt="image not found">';
+                carouselImages.appendChild(div);
+            }
+
+            // alert(nFile);
+        }
+
+        conta();
+    });
+</script>
