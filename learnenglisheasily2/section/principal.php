@@ -4,7 +4,8 @@
         <div class="col-4 d-flex justify-content-center align-items-center">
             <div class="container">
                 <h1 class="text-center text mainColor">Learn English easily with us</h1>
-                <h2 class="text-center text lightGray m-4">Impara l'inglese giocando e divertendoti con mappe, giochi, quiz, e tanto altro ancora…</h2>
+                <h2 class="text-center text lightGray m-4">Impara l'inglese giocando e divertendoti con mappe, giochi,
+                    quiz, e tanto altro ancora…</h2>
                 <div class="row text-center">
                     <div>
                         <button class="button mainColor shadow btn m-1" type="submit">
@@ -22,17 +23,18 @@
         <div class="col-7">
             <div id="imageCarousel" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner" id="carouselImages">
-                    <!-- Aggiungere le immagini -->
+                    <img src="./img/carosello_home/immage1.jpg" alt="image not found">
+                    <img src="./img/carosello_home/immage2.jpg" alt="image not found">
+                    <img src="./img/carosello_home/immage3.jpg" alt="image not found">
+                    <img src="./img/carosello_home/immage4.jpg" alt="image not found">
                 </div>
 
                 <a class="carousel-control-prev" href="#imageCarousel" role="button" data-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Precedente</span>
                 </a>
 
                 <a class="carousel-control-next" href="#imageCarousel" role="button" data-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Successiva</span>
                 </a>
             </div>
         </div>
@@ -44,9 +46,8 @@
             height: auto;
         }
     </style>
-
     <script>
-        document.addEventListener("DOMContentLoaded", function() {
+        document.addEventListener("DOMContentLoaded", function () {
             const carouselImages = document.getElementById('carouselImages');
             const imageFolder = './asserts/img/carosello_home/';
             // !!! IMPORTANTE !!!
