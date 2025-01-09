@@ -19,51 +19,37 @@
             </div>
         </div>
         <div class="col-1"></div>
-        <!--            IMMAGINE            -->
+        <!--            IMMAGINE            data-bs-interval = <intervallo di scorrimento> -->
         <div class="col-7">
-            <div id="imageCarousel" class="carousel slide" data-ride="carousel">
-                <div class="carousel-inner" id="carouselImages">
+            <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./asserts/img/carosello_home/image1.jpg" class="d-flex" alt="image not found">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./asserts/img/carosello_home/image2.jpg" class="d-flex" alt="image not found">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./asserts/img/carosello_home/image3.jpg" class="d-felx" alt="image not found">
+                    </div>
                 </div>
-
-                <a class="carousel-control-prev" href="#imageCarousel" role="button" data-slide="prev">
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                </a>
-
-                <a class="carousel-control-next" href="#imageCarousel" role="button" data-slide="next">
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                </a>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
         </div>
     </div>
-
     <style>
         .carousel-inner img {
             width: 100%;
-            height: auto;
+            height: 600px;
         }
     </style>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const carouselImages = document.getElementById('carouselImages');
-            const imageFolder = './asserts/img/carosello_home/';
-            // !!! IMPORTANTE !!!
-            const imageCount = 4; //Numero di foto inserite nella cartella
-
-            for (let i = 1; i <= imageCount; i++) {
-                const div = document.createElement('div');
-                div.className = i === 1 ? 'carousel-item active' : 'carousel-item';
-                div.innerHTML = `<img src="${imageFolder}image${i}.jpg" class="d-block w-100" alt="Image ${i}" draggable="false">`;
-                carouselImages.appendChild(div);
-                console.log("immagine aggiunta");
-            }
-
-            //Intervallo di autoscorrimento
-            setInterval(() => {
-                const activeItem = document.querySelector('.carousel-item.active');
-                const nextItem = activeItem.nextElementSibling || carouselImages.firstElementChild;
-                activeItem.classList.remove('active');
-                nextItem.classList.add('active');
-            }, 3000); //Delay in ms
-        });
-    </script>
 </div>
