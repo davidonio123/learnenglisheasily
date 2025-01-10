@@ -1,7 +1,7 @@
 <div class="container mt-4">
     <div class="row justify-content-center">
         <!--            CONTENUTO            -->
-        <div class="col-4 d-flex justify-content-center align-items-center">
+        <div class="col-lg-4 d-flex justify-content-center align-items-center">
             <div class="container">
                 <h1 class="text-center text mainColor">Learn English easily with us</h1>
                 <h2 class="text-center text lightGray m-4">Impara l'inglese giocando e divertendoti con mappe, giochi,
@@ -18,9 +18,9 @@
                 </div>
             </div>
         </div>
-        <div class="col-1"></div>
-        <!--            IMMAGINE            data-bs-interval = <intervallo di scorrimento> -->
-        <div class="col-7">
+        <div class="col-lg-1"></div>
+        <!--            IMMAGINE     data-bs-ride="carousel"       data-bs-interval = <intervallo di scorrimento> -->
+        <div class="col-lg-7 mt-4">
             <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
                 <div id="carosello" class="carousel-inner">
                     <!--            IMMAGINI            -->
