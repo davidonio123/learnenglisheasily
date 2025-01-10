@@ -8,10 +8,10 @@
                     quiz, e tanto altro ancora…</h2>
                 <div class="row text-center">
                     <div>
-                        <button class="button mainColor shadow btn m-1" type="submit">
+                        <button class="button mainColor shadow btn m-1 hover" type="submit">
                             <p>Log in</p>
                         </button>
-                        <button class="button mainColorLight btn m-1" type="submit">
+                        <button class="button mainColorLight btn m-1 hover" type="submit">
                             <p>Sign in</p>
                         </button>
                     </div>

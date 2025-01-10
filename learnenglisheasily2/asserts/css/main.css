@@ -83,7 +83,7 @@ ti levo di mezzo [t'accir] grazie <3 ) */
     background-color: var(--mainColor);
     color: #FFFFFF;
 }
-.button.mainColor:hover{
+.button.mainColor.hover:hover{
     background-color: var(--mainColor);
     color: #FFFFFF;
     transform: scale(1.1);
@@ -93,7 +93,7 @@ ti levo di mezzo [t'accir] grazie <3 ) */
     background-color: var(--mainColorLight);
     color: #333333;
 }
-.button.mainColorLight:hover{
+.button.mainColorLight.hover:hover{
     background-color: var(--mainColorLight);
     transform: scale(1.1);
 }
