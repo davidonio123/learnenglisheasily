@@ -2,7 +2,7 @@
 <footer>
     <div class="container pb-5 pt-5 dav_contaniner_foother mt-5">
         <div class="row g-5 d-flex justify-content-center align-items-center">
-            <div class="col-4 col-lg-3">
+            <div class="col-lg-4">
                 <div class="container text-center">
                     <h2>Chi siamo</h2>
                     <p>Siamo un gruppo di persone che ha come obbiettivo rendere piu facile la comprensione della lingua
@@ -10,13 +10,13 @@
                     <a href="./chi-siamo.php">Leggi di piu</a>
                 </div>
             </div>
-            <div class="col-4 col-lg-3">
+            <div class="col-lg-4">
                 <div class="container text-center">
                     <img src="./asserts/img/foother/pergamena.png" alt="image not found"
                         style="height: 200px; width:250px;">
                 </div>
             </div>
-            <div class="col-4 col-lg-3">
+            <div class="col-lg-4">
                 <div class="container text-center">
                     <h2>Meriti</h2>
                     <p>elenco di tutte le persone che hanno i meriti piu importati es:<br>Carmela Pietrangelo - Dirett.

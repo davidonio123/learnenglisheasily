@@ -1,4 +1,4 @@
-<?php define("TITLE", "log in"); ?>
+<?php define("TITLE", "home"); ?>
 
 <?php include('./layouts/header.php') ?>
 <?php include('./section/principal.php') ?>

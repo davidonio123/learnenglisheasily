@@ -1,5 +1,5 @@
 .header{
-    height: 64px;
+    height: 1fr;
     width: auto;
     display: flex;
     justify-content: center;

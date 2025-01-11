@@ -20,21 +20,23 @@
 <body>
     <div class="header">
         <div class="menu-container">
-            <button class="menu-button">
-                <a href="" class="text lightGray down">Home</a>
-            </button>
-            <button class="menu-button">
-                <a href="" class="text lightGray down">Feedback</a>
-            </button>
-            <button class="menu-button">
-                <a href="" class="text lightGray down">Grammar</a>
-            </button>
-            <button class="menu-button">
-                <a href="" class="text lightGray down">Vocabulary</a>
-            </button>
-            <button class="menu-button">
-                <a href="" class="text lightGray down">About Us</a>
-            </button>
+            <div class="container">
+                <button class="menu-button">
+                    <a href="" class="text lightGray down">Home</a>
+                </button>
+                <button class="menu-button">
+                    <a href="" class="text lightGray down">Feedback</a>
+                </button>
+                <button class="menu-button">
+                    <a href="" class="text lightGray down">Grammar</a>
+                </button>
+                <button class="menu-button">
+                    <a href="" class="text lightGray down">Vocabulary</a>
+                </button>
+                <button class="menu-button">
+                    <a href="" class="text lightGray down">About Us</a>
+                </button>
+            </div>
         </div>
     </div>
 </body>
