@@ -8,6 +8,7 @@ $password = md5($_POST["password"]);
 // creazione ed esecuzione QUERY
 $q = $db->prepare("SELECT * FROM user WHERE email = '$email'");
 $q->execute();
+echo '</br>QUERY ESEGUITA</br>';
 $q->setFetchMode(PDO::FETCH_ASSOC);
 $rows = $q->rowCount();
 
@@ -22,5 +23,5 @@ if ($rows > 0) {
     }
 } else {
     // email e pass errati
-    echo 'non ce nessuna email';
+    header('location: ../login.php?error=email');
 }

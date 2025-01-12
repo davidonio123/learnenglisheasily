@@ -4,23 +4,23 @@
             <h1 class="text-center text mainColor">Log-in</h1>
             <form action="./function/login.php" method="post">
                 <?php
-                if (isset($_GET['verification'])) {
-                    $verification = $_GET['verification'];
-                    if ($verification == "false") {
+                if (isset($_GET['error'])) {
+                    $error = $_GET['error'];
+                    if ($error == "email") {
                 ?>
-                        <div class="alert alert-danger" role="alert">
-                            Email o password errati, riprova o contatta gli amministratori!
+                        <div class="alert alert-danger mt-3" role="alert">
+                            Non sei registrato, effettua prima il sign in
                         </div>
                     <?php
-                    } elseif ($verification == "true") {
+                    } elseif ($error == "true") {
                     ?>
-                        <div class="alert alert-success" role="alert">
+                        <div class="alert alert-success mt-3" role="alert">
                             Sign-in avvenuto con successo, effettua il log-in
                         </div>
                     <?php
-                    } elseif ($verification == "login") {
+                    } elseif ($error == "login") {
                     ?>
-                        <div class="alert alert-success" role="alert">
+                        <div class="alert alert-success mt-3" role="alert">
                             Esegui il log-in prima di continuare 😊
                         </div>
                 <?php
