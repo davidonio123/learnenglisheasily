@@ -6,7 +6,9 @@ $email = $_POST["email"];
 $password = md5($_POST["password"]);
 
 // creazione ed esecuzione QUERY
+echo '</br>PREPARAZIONE QUERY...</br>';
 $q = $db->prepare("SELECT * FROM user WHERE email = '$email'");
+echo '</br>QUERY PREPARATA</br>';
 $q->execute();
 echo '</br>QUERY ESEGUITA</br>';
 $q->setFetchMode(PDO::FETCH_ASSOC);
