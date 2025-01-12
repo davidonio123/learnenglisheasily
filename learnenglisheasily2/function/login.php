@@ -24,7 +24,7 @@ $rows = $q->rowCount();
 
 if ($rows > 0) {
     $rows = $q->fetch();
-    if ($rows['password'] === $password) {
+    if ($rows['password'] === md5($password)) {
         // email e pass corretti
         echo 'la password corrisponde </br>';
     } else {
