@@ -12,10 +12,10 @@
                             Non sei registrato, effettua prima il sign in
                         </div>
                     <?php
-                    } elseif ($error == "true") {
+                    } elseif ($error == "password") {
                     ?>
-                        <div class="alert alert-success mt-3" role="alert">
-                            Sign-in avvenuto con successo, effettua il log-in
+                        <div class="alert alert-danger mt-3" role="alert">
+                            Inserire prima una password
                         </div>
                     <?php
                     } elseif ($error == "login") {

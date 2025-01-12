@@ -4,7 +4,10 @@ include("./main.php");
 // RECUPERO DEI DATI POST
 $email = $_POST["email"];
 $password = md5($_POST["password"]);
-
+if(empty($password)){
+    // password non inserita
+    header('location: ../login.php?error=password');
+}
 
 $q = $db->prepare("SELECT * FROM user WHERE email = '$email' AND password = 'md5($password)'");
 if($q->execute()){
