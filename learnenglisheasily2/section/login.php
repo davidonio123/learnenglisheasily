@@ -2,7 +2,7 @@
     <div class="row">
         <div class="col-lg-6 offset-lg-3">
             <h1 class="text-center text mainColor">Log-in</h1>
-            <form action="#" method="post">
+            <form action="./loader/login.php" method="post">
                 <?php
                 if (isset($_GET['verification'])) {
                     $verification = $_GET['verification'];
@@ -38,7 +38,7 @@
                 <button type="submit" class="btn btn-primary button mainColor">Invia</button>
                 <div class="text-center">
                     <span class="text lightGray down" >Password dimenticata?</span>
-                    <a href="./change_password.php">Recupera</a>
+                    <a href="#">Recupera</a>
                 </div>
             </form>
         </div>
