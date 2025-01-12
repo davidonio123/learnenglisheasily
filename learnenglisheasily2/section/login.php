@@ -9,22 +9,28 @@
                     if ($error == "email") {
                 ?>
                         <div class="alert alert-danger mt-3" role="alert">
-                            Non sei registrato, effettua prima il sign in
+                            Questa email non e registrata, effettua prima il sign in
                         </div>
                     <?php
-                    } elseif ($error == "password") {
+                    } elseif ($error == "empty_password") {
                     ?>
                         <div class="alert alert-danger mt-3" role="alert">
                             Inserire prima una password
                         </div>
                     <?php
-                    } elseif ($error == "login") {
+                    } elseif ($error == "wrong_password") {
                     ?>
-                        <div class="alert alert-success mt-3" role="alert">
-                            Esegui il log-in prima di continuare 😊
+                        <div class="alert alert-danger mt-3" role="alert">
+                            Password errata, riprova
                         </div>
-                <?php
+                    <?php
                     }
+                } elseif (isset($_GET["success"])) {
+                    ?>
+                    <div class="alert alert-success mt-3" role="alert">
+                        Stai per essere indirizzato alla pagina welcome
+                    </div>
+                    <?php
                 }
                 ?>
                 <div class="mb-3">
@@ -37,7 +43,7 @@
                 </div>
                 <button type="submit" class="btn btn-primary button mainColor">Invia</button>
                 <div class="text-center">
-                    <span class="text lightGray down" >Password dimenticata?</span>
+                    <span class="text lightGray down">Password dimenticata?</span>
                     <a href="#">Recupera</a>
                 </div>
             </form>

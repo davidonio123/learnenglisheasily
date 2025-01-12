@@ -1,17 +1,23 @@
 <?php
+
+use function PHPSTORM_META\type;
+
 include("./main.php");
 
 // RECUPERO DEI DATI POST
+if ($_POST["password"] =="") {
+    // password non inserita
+    header('location: ../login.php?error=empty_password');
+    die();
+}
 $email = $_POST["email"];
 $password = md5($_POST["password"]);
-if(empty($password)){
-    // password non inserita
-    header('location: ../login.php?error=password');
-}
 
-$q = $db->prepare("SELECT * FROM user WHERE email = '$email' AND password = 'md5($password)'");
-if($q->execute()){
-    echo 'ciao mamma';
+$q = $db->prepare("SELECT * FROM user WHERE email = '$email' AND password = '$password'");
+$q->execute();
+$r = $q->fetch(PDO::FETCH_ASSOC);
+if ($r>0) {
+    echo 'trovata una riga';
 }
 
 
@@ -25,16 +31,17 @@ $q->setFetchMode(PDO::FETCH_ASSOC);
 $rows = $q->rowCount();
 
 
-if ($rows > 0) {
+if ($rows == 1) {
     $rows = $q->fetch();
-    if ($rows['password'] === md5($password)) {
+    if ($rows['password'] === $password) {
         // email e pass corretti
-        echo 'la password corrisponde </br>';
+        header('location: ../login.php?success');
     } else {
         // email corretta ma pass errata
-        echo 'la mail ce ma la pass non corrisponde';
+        header('location: ../login.php?error=wrong_password');
     }
 } else {
     // email e pass errati
     header('location: ../login.php?error=email');
+    
 }
