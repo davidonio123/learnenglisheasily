@@ -19,8 +19,8 @@
             <div class="col-lg-4">
                 <div class="container text-center">
                     <h2>Meriti</h2>
-                    <p>elenco di tutte le persone che hanno i meriti piu importati es:<br>Carmela Pietrangelo - Dirett.
-                        progg,<br>Davide Barretta - sviluppatore,<br>Christian Colatruglio - sviluppatore,<br>Classe 3AI
+                    <p>Carmela Pietrangelo - Dirett.
+                        progg,<br>Davide Barretta - sviluppatore,<br>Christian Colatruglio - sviluppatore,<br>Simone Robusto - sicurezza,<br>Classe 3AI
                         - creatori di contenuti</p>
                 </div>
             </div>
