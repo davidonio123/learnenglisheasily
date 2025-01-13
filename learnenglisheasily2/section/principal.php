@@ -11,7 +11,7 @@
                         <button class="button mainColor shadow btn m-1 hover" type="submit" onclick="location.href='./login.php'">
                             <p>Log in</p>
                         </button>
-                        <button class="button mainColorLight btn m-1 hover" type="submit">
+                        <button class="button mainColorLight btn m-1 hover" type="submit" onclick="location.href='./signin.php'" >
                             <p>Sign in</p>
                         </button>
                     </div>
