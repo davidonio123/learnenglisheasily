@@ -3,6 +3,6 @@
 $servername="localhost";
 $username="root";
 $passworddb="";
-$dbname="utenti";
+$dbname="user";
 
 ?>

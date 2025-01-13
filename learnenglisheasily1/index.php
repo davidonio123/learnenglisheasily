@@ -123,7 +123,7 @@
         <?php
         include("./db/db_connection.php");
 
-        $q = $db->prepare("SELECT * FROM utenti");
+        $q = $db->prepare("SELECT * FROM user");
         $q->execute();
         $q->setFetchMode(PDO::FETCH_ASSOC);
         ?>
