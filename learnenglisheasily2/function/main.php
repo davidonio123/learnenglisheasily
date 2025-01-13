@@ -1,5 +1,10 @@
 <?php 
 include("../db/db_connection.php");
+/**
+ * @description Extracts the first name and last name from an email address.
+ * @param mixed $email The email address to extract the name from.
+ * @return array An array containing the extracted first name and last name.
+ */
 function extractNameFromEmail($email) {
     // Split the email by '@'
     $parts = explode('@', $email);

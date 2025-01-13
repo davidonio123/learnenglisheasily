@@ -34,7 +34,8 @@ if (isset($_POST['class']) && isset($_POST['email']) && isset($_POST['password']
     $name = $user['first_name'];
     $surname = $user['last_name'];
 
-    $q = $db ->prepare("SELECT * FROM user WHERE email = '$email'");
+    // controllo se l'email è già registrata
+    $q = $db -> prepare("SELECT * FROM user WHERE email = '$email'");
     $q -> execute();
     $q -> fetch(PDO::FETCH_ASSOC);
     $r = $q -> rowCount();
@@ -48,5 +49,9 @@ if (isset($_POST['class']) && isset($_POST['email']) && isset($_POST['password']
         header("Location: ../signin.php?error=password");
         exit();
     }
+
+
+
+
 }
 echo "</br>success";
