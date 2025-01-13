@@ -1,46 +1,40 @@
 <?php
+
 // Collegamento al database
 include("./main.php");
 
 // Controllo dei dati inseriti
-if (isset($_POST['username']) && isset($_POST['email']) && isset($_POST['password']) && isset($_POST['confirm_password'])) {
-    $username = $_POST['username'];
+if (isset($_POST['class']) && isset($_POST['email']) && isset($_POST['password']) && isset($_POST['ceck_password'])) {
+    $class = $_POST['class'];
     $email = $_POST['email'];
-    $password = md5($_POST['password']); // Utilizzo della funzione md5 per criptare la password
-    $confirm_password = $_POST['confirm_password'];
+    $password = $_POST['password'];
+    $ceck = $_POST['ceck_password'];
 
-    // Controllo della validità dell'e-mail
-    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        header("Location: ./signin.php?error=email");
-        exit;
+    // Controllo se i campi sono vuoti
+
+    if($class == "" || $email == "" || $password == "" || $ceck == ""){
+        header("Location: ../signin.php?error=empty");
+        exit();
     }
 
-    // Controllo della lunghezza della password
-    if (strlen($password) < 8) {
-        header("Location: ./signin.php?error=password");
-        exit;
+    // estrazione del nome e del cognome dall'email
+    $user = extractNameFromEmail($email);
+    if(isset($user['error'])){
+        if($user['error'] == 'invalid_domain'){
+            header("Location: ../signin.php?error=invalid_domain"); // dominio della email diverso da iti-marconi.edu.it o itimarconipilla.edu.it
+            exit();
+        }elseif($user['error'] == 'invalid_name'){
+            header("Location: ../signin.php?error=invalid_name"); // formato della email non valido
+            exit();
+        }
+        echo "errore non gestito";
+        exit();
     }
 
-    // Controllo della conferma della password
-    if ($password != md5($confirm_password)) {
-        header("Location: ./signin.php?error=confirm_password");
-        exit;
-    }
+    $name = $user['first_name'];
+    $surname = $user['last_name'];
 
-    // Controllo della disponibilità dello username
-    $query = "SELECT * FROM user WHERE username = '$username'";
-    $result = $db->prepare($query);
-    $result->execute();
-    if ($result->rowCount() > 0) {
-        header("Location: ./signin.php?error=username");
-        exit;
-    } else {
-        // Inserimento dei dati nel database
-        $query = "INSERT INTO user (username, email, password) VALUES ('$username', '$email', '$password')";
-        $result = $db->prepare($query);
-        $result->execute();
-        header("Location: ./login.php?success=registration");
-        exit;
-    }
+
+  
 }
-?>
+echo "</br>success";

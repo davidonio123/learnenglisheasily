@@ -1,57 +1,53 @@
-<div class="container mt-5 pt-5 mb-5 pb-5">
+<div class="container mt-4 pt-4">
     <div class="row">
         <div class="col-lg-6 offset-lg-3">
-            <h1 class="text-center text mainColor">Sign-in</h1>
+            <h1 class="text-center text mainColor mb-5">Sign up</h1>
             <form action="./function/signin.php" method="post">
                 <?php
-                if (isset($_GET['error'])) {
-                    $error = $_GET['error'];
-                    if ($error == "email") {
-                ?>
-                        <div class="alert alert-danger mt-3" role="alert">
-                            L'e-mail inserita non è valida
+                if (isset($_GET["error"])) {
+                    if ($_GET["error"] == "empty") {
+                    ?>
+                        <div class="alert alert-danger" role="alert">
+                            <strong>Errore!</strong> Compila tutti i campi.
                         </div>
                     <?php
-                    } elseif ($error == "password") {
+                    } elseif ($_GET["error"] == "invalid_domain") {
                     ?>
-                        <div class="alert alert-danger mt-3" role="alert">
-                            La password deve avere almeno 8 caratteri
+                        <div class="alert alert-danger" role="alert">
+                            <strong>Errore!</strong> Dominio dell email non valido.
                         </div>
                     <?php
-                    } elseif ($error == "confirm_password") {
+                    } elseif ($_GET["error"] == "invalid_name") {
                     ?>
-                        <div class="alert alert-danger mt-3" role="alert">
-                            Le password non coincidono
-                        </div>
-                    <?php
-                    } elseif ($error == "username") {
-                    ?>
-                        <div class="alert alert-danger mt-3" role="alert">
-                            Lo username inserito non è disponibile
+                        <div class="alert alert-danger" role="alert">
+                            <strong>Errore!</strong> Formato dell email non valido.
                         </div>
                     <?php
                     }
                 }
                 ?>
-                <div class="mb-3">
-                    <label for="username" class="form-label text lightGray down">Username</label>
-                    <input type="text" name="username" class="form-control" id="username" aria-describedby="username" placeholder="Inserisci qui il tuo username">
-                </div>
-                <div class="mb-3">
-                    <label for="email" class="form-label text lightGray down">E-mail</label>
-                    <input type="email" name="email" class="form-control" id="email" aria-describedby="email" placeholder="Inserisci qui la tua e-mail">
+                <div class="row mb-3">
+                    <div class="col-lg-8">
+                        <label for="email" class="form-label text lightGray down">E-mail</label>
+                        <input type="email" name="email" class="form-control" id="email" aria-describedby="email" placeholder="Inserisci qui la tua e-mail">
+                    </div>
+                    <div class="col-lg-4">
+                        <label for="class" class="form-label text lightGray down">Classe:</label>
+                        <input type="text" name="class" class="form-control" id="class" aria-describedby="class" placeholder="Classe">
+                    </div>
                 </div>
                 <div class="mb-3">
                     <label for="password" class="form-label text lightGray down">Password</label>
                     <input type="password" name="password" class="form-control" id="password" aria-describedby="password" placeholder="Inserisci qui la tua password">
                 </div>
                 <div class="mb-3">
-                    <label for="confirm_password" class="form-label text lightGray down">Conferma Password</label>
-                    <input type="password" name="confirm_password" class="form-control" id="confirm_password" aria-describedby="confirm_password" placeholder="Conferma la tua password">
+                    <label for="password" class="form-label text lightGray down">Conferma password</label>
+                    <input type="password" name="ceck_password" class="form-control" id="ceck_password" aria-describedby="password" placeholder="Reinserisci la tua password">
                 </div>
-                <button type="submit" class="btn btn-primary button mainColor">Invia</button>
+                <button type="submit" class=" btn btn-primary button mainColor">Invia</button>
                 <div class="text-center">
-                    <span class="text lightGray down" >You are welcome !</span>
+                    <span>Hai già un account?</span>
+                    <a href="./login.php">Log-in</a>
                 </div>
             </form>
         </div>

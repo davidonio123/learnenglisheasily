@@ -20,7 +20,6 @@ if ($r>0) {
     echo 'trovata una riga';
 }
 
-
 // creazione ed esecuzione QUERY
 echo '</br>PREPARAZIONE QUERY...</br>';
 $q = $db->prepare("SELECT * FROM user WHERE email = '$email'");
@@ -31,7 +30,7 @@ $q->setFetchMode(PDO::FETCH_ASSOC);
 $rows = $q->rowCount();
 
 
-if ($rows == 1) {
+if ($rows > 0) {
     $rows = $q->fetch();
     if ($rows['password'] === $password) {
         // email e pass corretti
