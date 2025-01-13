@@ -6,7 +6,7 @@
                 <?php
                 if (isset($_GET["error"])) {
                     if ($_GET["error"] == "empty") {
-                    ?>
+                ?>
                         <div class="alert alert-danger" role="alert">
                             <strong>Errore!</strong> Compila tutti i campi.
                         </div>
@@ -23,7 +23,20 @@
                             <strong>Errore!</strong> Formato dell email non valido.
                         </div>
                     <?php
+                    } elseif ($_GET["error"] == "password") {
+                    ?>
+                        <div class="alert alert-danger" role="alert">
+                            <strong>Errore!</strong> La password non corrisponde.
+                        </div>
+                    <?php
                     }
+                    elseif ($_GET["error"] == "email") {
+                        ?>
+                            <div class="alert alert-danger" role="alert">
+                                <strong>Errore!</strong> La mail e gia registrata.
+                            </div>
+                        <?php
+                        }
                 }
                 ?>
                 <div class="row mb-3">
@@ -32,7 +45,7 @@
                         <input type="email" name="email" class="form-control" id="email" aria-describedby="email" placeholder="Inserisci qui la tua e-mail">
                     </div>
                     <div class="col-lg-4">
-                        <label for="class" class="form-label text lightGray down">Classe:</label>
+                        <label for="class" class="form-label text lightGray down">Classe</label>
                         <input type="text" name="class" class="form-control" id="class" aria-describedby="class" placeholder="Classe">
                     </div>
                 </div>

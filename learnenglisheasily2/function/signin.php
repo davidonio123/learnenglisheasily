@@ -8,11 +8,11 @@ if (isset($_POST['class']) && isset($_POST['email']) && isset($_POST['password']
     $class = $_POST['class'];
     $email = $_POST['email'];
     $password = $_POST['password'];
-    $ceck = $_POST['ceck_password'];
+    $ceck_password = $_POST['ceck_password'];
 
     // Controllo se i campi sono vuoti
 
-    if($class == "" || $email == "" || $password == "" || $ceck == ""){
+    if($class == "" || $email == "" || $password == "" || $ceck_password == ""){
         header("Location: ../signin.php?error=empty");
         exit();
     }
@@ -34,7 +34,19 @@ if (isset($_POST['class']) && isset($_POST['email']) && isset($_POST['password']
     $name = $user['first_name'];
     $surname = $user['last_name'];
 
+    $q = $db ->prepare("SELECT * FROM user WHERE email = '$email'");
+    $q -> execute();
+    $q -> fetch(PDO::FETCH_ASSOC);
+    $r = $q -> rowCount();
+    if($r > 0){
+        header("Location: ../signin.php?error=email");
+        exit();
+    }
 
-  
+    // controllo se le password corrispondono
+    if($password !== $ceck_password){
+        header("Location: ../signin.php?error=password");
+        exit();
+    }
 }
 echo "</br>success";
