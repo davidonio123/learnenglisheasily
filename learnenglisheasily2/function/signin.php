@@ -50,8 +50,6 @@ if (isset($_POST['class']) && isset($_POST['email']) && isset($_POST['password']
         exit();
     }
 
-
-
-
+    
 }
 echo "</br>success";

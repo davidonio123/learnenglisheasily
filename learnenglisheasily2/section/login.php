@@ -6,31 +6,31 @@
                 <?php
                 if (isset($_GET['error'])) {
                     $error = $_GET['error'];
-                    if ($error == "email") {
-                ?>
-                        <div class="alert alert-danger mt-3" role="alert">
-                            Questa email non e registrata, effettua prima il sign in
+                    if ($error == "empty") {
+                    ?>
+                        <div class="alert alert-danger" role="alert">
+                            <strong>Errore!</strong> Inserire prima tutti i campi.
                         </div>
                     <?php
-                    } elseif ($error == "empty_password") {
+                    } elseif ($error == "email") {
                     ?>
                         <div class="alert alert-danger mt-3" role="alert">
-                            Inserire prima una password
+                            <strong>Errore!</strong> L'email non e registrata, effettua prima il login.
                         </div>
                     <?php
                     } elseif ($error == "wrong_password") {
                     ?>
                         <div class="alert alert-danger mt-3" role="alert">
-                            Password errata, riprova
+                            <strong>Errore!</strong> Password errata.
                         </div>
                     <?php
                     }
                 } elseif (isset($_GET["success"])) {
                     ?>
                     <div class="alert alert-success mt-3" role="alert">
-                        Stai per essere indirizzato alla pagina welcome
+                        <strong>Successo!</strong> Stai per essere indirizzato alla pagina welcome.
                     </div>
-                    <?php
+                <?php
                 }
                 ?>
                 <div class="mb-3">
