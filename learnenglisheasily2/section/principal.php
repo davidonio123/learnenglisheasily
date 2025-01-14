@@ -12,7 +12,7 @@
                             <p>Log in</p>
                         </button>
                         <button class="button mainColorLight btn m-1 hover" type="submit" onclick="location.href='./signin.php'" >
-                            <p>Sign in</p>
+                            <p>Sign up</p>
                         </button>
                     </div>
                 </div>
