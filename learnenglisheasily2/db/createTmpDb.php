@@ -10,7 +10,7 @@ try {
 
     // Creazione della tabella
     $sql = "CREATE TABLE IF NOT EXISTS user (
-        id INT AUTO_INCREMENT PRIMARY KEY,
+        id BIGINT UNSIGNED AUTO_INCREMENT PRIMARY KEY // PRENDE SOLO I NUERI POSITIVI
         name VARCHAR(50) NOT NULL,
         surname VARCHAR(50) NOT NULL,
         class VARCHAR(5) NOT NULL,
@@ -21,7 +21,7 @@ try {
     $conn->exec($sql);
     echo "Tabella creata con successo.";
 
-    // Inserimento dei dati random
+    // Inserimento dei dati temporanei
     $students = [
         ["Luca", "Rossi", "4A", "luca.rossi@iti-marconi.edu.it", md5("password1")],
         ["Anna", "Bianchi", "3B", "anna.bianchi@example.com", md5("password2")],
@@ -60,6 +60,16 @@ try {
 
     echo "Dati inseriti con successo.";
 
+    echo "creazione tabella commenti";
+
+    // Creazione della tabella
+    $sql = "CREATE TABLE commenti (
+        id INT AUTO_INCREMENT PRIMARY KEY,
+        commento TEXT,
+        id_utente INT,
+        FOREIGN KEY (id_utente) REFERENCES utenti(id)
+    )";
+    
 } catch (PDOException $e) {
     echo "Errore: " . $e->getMessage();
 }
