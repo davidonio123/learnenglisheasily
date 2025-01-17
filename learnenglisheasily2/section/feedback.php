@@ -6,7 +6,7 @@
         <!-- Colonna 1 -->
         <div class="col-md-4">
             <div class="feedback-card">
-                <h5>Daniël</h5>
+                <h5 class="text mainColor mid">Daniël</h5>
                 <p>I've built pretty handy sites powered by Craft or WordPress in the past, but seeing @framer tackle CMS stuff so effortlessly is mind-boggling.</p>
             </div>
 
@@ -34,7 +34,7 @@
             </div>
 
             <div class="feedback-card">
-                <h5 class="text mainColor mid">Dann</h5>
+                <h5">Dann</h5>
                 <p>I learned how to build a website in @Framer! My goal was to learn the basic tools in about 20 minutes a day last week. Nothing fancy. No special design. Just random elements that’s responsive. If I can do it, so can you!</p>
             </div>
 
