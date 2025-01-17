@@ -30,13 +30,16 @@ ti levo di mezzo [t'accir] grazie <3 ) */
     font-weight: bold;
     font-size: var(--big);
     letter-spacing: -2px;
-    line-height: 1.2em;
+    line-height: 1.3em;
 }
 .text.mainColor.up{
     font-size: var(--big) + var(--up);
 }
 .text.mainColor.down{
     font-size: var(--big) + var(--down);
+}
+.text.mainColor.mid{
+    font-size: 1.2rem;
 }
 
 .text.mainColorLight{

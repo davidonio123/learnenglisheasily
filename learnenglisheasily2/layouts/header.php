@@ -23,7 +23,7 @@
                     <a href="./index.php" class="text lightGray down">Home</a>
                 </button>
                 <button class="menu-button">
-                    <a href="#" class="text lightGray down">Feedback</a>
+                    <a href="./feedback.php" class="text lightGray down">Feedback</a>
                 </button>
                 <button class="menu-button">
                     <a href="#" class="text lightGray down">Grammar</a>
