@@ -11,7 +11,7 @@ $rows = $q->rowCount();
 
 if ($rows == 0) {
     // nessun commento
-    header('location: ../index.php?error=no_comment');
+    header('location: ./feedback.php?error=no_comment');
     die();
 }
 

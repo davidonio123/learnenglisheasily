@@ -3,7 +3,18 @@
 </div>
 <div class="container py-5">
     <div class="row g-4">
-        <?php include("./function/feedback.php") ?>
+        <!-- ANCORA DA AGGIUSTARE LA COSA DEI CARICAMENTI DEI COMMENTI SENZA FARLI CARICARE TUTTI -->
+        <?php
+        if (isset($_GET["error"])) {
+            if ($_GET["error"] == "no_comment") {
+        ?>
+                <div class="container text-center text">Non ci sono acnora commenti :)</div>
+        <?php
+            }
+        }else{
+            include("./function/feedback.php");
+        }
+        ?>
     </div>
 </div>
 
@@ -13,7 +24,7 @@
         border-radius: 8px;
         padding: 20px;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        background-color: #fff; 
+        background-color: #fff;
         margin-bottom: 20px;
     }
 
