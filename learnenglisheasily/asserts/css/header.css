@@ -1,0 +1,28 @@
+.header{
+    height: 1fr;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+    background-color: transparent;
+    
+}
+
+.menu-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.menu-button{
+    height: 50px;
+    width:fit-content;
+    margin:8px;
+    background-color: transparent;
+    border: none;
+    font-size: medium;
+    font-family: Impact, Haettenschweiler, 'Inter', sans-serif;
+    color: gray;
+}
