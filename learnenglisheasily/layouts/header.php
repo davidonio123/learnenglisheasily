@@ -32,7 +32,7 @@
                     <a href="#" class="text lightGray down">Vocabulary</a>
                 </button>
                 <button class="menu-button">
-                    <a href="#" class="text lightGray down">About Us</a>
+                    <a href="./aboutus.php" class="text lightGray down">About Us</a>
                 </button>
             </div>
         </div>
