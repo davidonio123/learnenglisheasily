@@ -15,7 +15,7 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <title><?PHP echo TITLE ?></title>
 </head>
-<body>
+<body style="min-height: 100vh;">
     <div class="header">
         <div class="menu-container">
             <div class="container">
