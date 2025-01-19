@@ -4,21 +4,21 @@
         <div class="col-lg-6 c mt-3">
             <div class="col-3 c w-50">
                 <i class="bi bi-instagram" style="font-size: 2rem;"></i>
-                <a class="p-2 text lightGray down">IT MarconiPilla</a>
+                <a class="p-2 text lightGray down" href="https://www.instagram.com/itmarconipilla/">itmarconipilla</a>
             </div>
             <div class="col-3 c w-50">
                 <i class="bi bi-instagram" style="font-size: 2rem;"></i>
-                <a class="p-2 text lightGray down">Carmela Pietrangelo</a>
+                <a class="p-2 text lightGray down" href="https://www.instagram.com/carmela.pietrangelo/">carmela.pietrangelo</a>
             </div>
         </div>
         <div class="col-lg-6 c mt-3">
             <div class="col-3 c w-50">
                 <i class="bi bi-instagram" style="font-size: 2rem;"></i>
-                <a class="p-2 text lightGray down">Christian Colatruglio</a>
+                <a class="p-2 text lightGray down" href="https://www.instagram.com/christian._.col/">christian._.col</a>
             </div>
             <div class="col-3 c w-50">
                 <i class="bi bi-instagram" style="font-size: 2rem;"></i>
-                <a class="p-2 text lightGray down">Davide Barretta</a>
+                <a class="p-2 text lightGray down"href="https://www.instagram.com/davide.barrettaa/">davide.barrettaa</a>
             </div>
         </div>
     </div>

@@ -1,5 +1,7 @@
 <?php
 
+// LALGORITMO FUNZIONA UN PO COME IL CAZZO MA FUNZIONA
+
 include("./db/db_connection.php");
 
 // RECUPERO DEI DATI DELLA TABELLA COMMENTI
