@@ -29,7 +29,7 @@ ti levo di mezzo [t'accir] grazie <3 ) */
     color: var(--mainColor);
     font-weight: bold;
     font-size: var(--big);
-    letter-spacing: -2px;
+    letter-spacing: -1px;
     line-height: 1.3em;
 }
 .text.mainColor.up{
