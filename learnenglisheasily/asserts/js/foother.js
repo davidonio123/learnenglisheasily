@@ -8,6 +8,8 @@ if (bodyHeight <= screenHeight) {
     footer.style.bottom = '0';
     footer.style.width = '100%';
     footer.style.height = '121px';
+    footer.classList.add('mt-0');
+    footer.classList.add('pt-0');
     footer.classList.add('fixed-bottom');
     txtsx.classList.remove('p-5');
     txtdx.classList.remove('p-5');

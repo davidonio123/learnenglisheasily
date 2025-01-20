@@ -19,7 +19,7 @@ ti levo di mezzo [t'accir] grazie <3 ) */
 
     --big: 50px;
     --medium: 25px;
-    --small: 15px;
+    --small: 20px;
     --up: 24px;
     --down: 24px;
 }
@@ -39,7 +39,7 @@ ti levo di mezzo [t'accir] grazie <3 ) */
     font-size: var(--big) + var(--down);
 }
 .text.mainColor.mid{
-    font-size: 1.2rem;
+    font-size: var(--medium);
 }
 
 .text.mainColorLight{
