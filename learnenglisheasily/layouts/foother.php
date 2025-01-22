@@ -4,16 +4,12 @@
     <div class="container">
         <div class="row">
             <!-- Testo sulla sinistra -->
-            <div class="col-md-6">
-                <div class=" text-md-start">
-                    <p class="text lightGray down p-5 sx">it MarconiPilla <?php echo date("Y") ?></p>
-                </div>
+            <div class="col-6 text-start">
+                <p class="text lightGray down p-md-5 pb-5">it MarconiPilla <?php echo date("Y") ?></p>
             </div>
             <!-- Testo sulla destra -->
-            <div class="col-md-6 text-end">
-                <div class=" text-md-end">
-                    <p class="text lightGray down p-5 dx">Carmela Pietrangelo</p>
-                </div>
+            <div class="col-6 text-end">
+                <p class="text lightGray down p-md-5 pb-5">Carmela Pietrangelo</p>
             </div>
         </div>
     </div>
@@ -26,4 +22,5 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 <script src="./asserts/js/foother.js"></script>
 </body>
+
 </html>

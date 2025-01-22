@@ -13,7 +13,7 @@ function extractNameFromEmail($email) {
     }
     // Get the part afther '@'
     $domino = $parts[1];
-    if ($domino == 'iti-marconi.edu.it' xor $domino != 'itimarconipilla.edu.it') {
+    if ($domino == 'iti-marconi.edu.it' xor $domino != 'istitutotecnicomarconipilla.edu.it') {
         return ['error' => 'invalid_domain'];
     }
 

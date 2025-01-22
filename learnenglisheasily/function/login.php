@@ -30,7 +30,7 @@ if ($rows > 0) {
     $rows = $q->fetch();
     if ($rows['password'] === md5($password)) {
         // email e pass corretti
-        header('location: ../login.php?success');
+        header('location: ../welcome.php');
     } else {
         // email corretta ma pass errata
         header('location: ../login.php?error=wrong_password');
