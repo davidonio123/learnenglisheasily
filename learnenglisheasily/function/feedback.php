@@ -64,7 +64,7 @@ function getUtente($id, $users)
 echo '<div class="col-md-4">';
 foreach ($col1 as $commento) {
     $utente = getUtente($commento['id_utente'], $users);
-    $nome = $utente[0];
+    $nome = $utente[0]; 
     $cognome = $utente[1];
     $class = $utente[2];
 ?>
