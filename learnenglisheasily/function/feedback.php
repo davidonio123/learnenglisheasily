@@ -68,7 +68,7 @@ foreach ($col1 as $commento) {
     $cognome = $utente[1];
     $class = $utente[2];
 ?>
-    <div class="feedback-card">
+    <div class="feedback-card wow fadeIn animate__slower">
         <h5 class="text mainColor mid"><?php echo $nome . " " . $cognome . " " ?><span class="text lightGray down"><?php echo $class ?></span></h5>
         <p class="text darkGray down"></p><?php echo $commento['commento'] ?></p>
     </div>
@@ -83,7 +83,7 @@ foreach ($col2 as $commento) {
     $cognome = $utente[1];
     $class = $utente[2];
 ?>
-    <div class="feedback-card">
+    <div class="feedback-card wow fadeIn animate__slower">
         <h5 class="text mainColor mid"><?php echo $nome . " " . $cognome . " " ?><span class="text lightGray down"><?php echo $class ?></span></h5>
         <p class="text darkGray down"></p><?php echo $commento['commento'] ?></p>
     </div>
@@ -98,7 +98,7 @@ foreach ($col3 as $commento) {
     $cognome = $utente[1];
     $class = $utente[2];
 ?>
-    <div class="feedback-card">
+    <div class="feedback-card wow fadeIn animate__slower">
         <h5 class="text mainColor mid"><?php echo $nome . " " . $cognome . " " ?><span class="text lightGray down"><?php echo $class ?></span></h5>
         <p class="text darkGray down"></p><?php echo $commento['commento'] ?></p>
     </div>

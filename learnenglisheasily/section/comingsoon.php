@@ -15,10 +15,10 @@
         <div>
         <iframe src="https://lottie.host/embed/6759eb6c-693d-4bcd-82ff-678d6e7d8c88/9Y1gajLcQN.lottie" style="width: 300px; height: 300px;" class="animate__animated animate__fadeIn"></iframe>
 
-            <h1 class="display-1 animate__animated animate__fadeIn">Coming Soon</h1>
+            <h1 class="display-1 animate__animated animate__fadeIn text mainColor up">Coming Soon</h1>
             <p class="lead text-muted animate__animated animate__fadeIn">We're still working on this part</p>
             <p class="text-muted animate__animated animate__fadeIn ">Why don't you visit the rest of the site meanwhile?</p>
-            <a href="index.php" class="btn btn-primary btn-lg mt-4 animate__animated animate__fadeIn ">Go to Welcome Page</a>
+            <a href="./" class="btn btn-primary btn-lg mt-4 animate__animated animate__fadeIn ">Go to Home Page</a>
         </div>
     </div>
 </body>

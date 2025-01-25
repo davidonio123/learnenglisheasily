@@ -5,7 +5,6 @@ $request = $_SERVER['REQUEST_URI'];
 $request = explode('/', $request); // attenzione salva una stringa vuota che sarebbe lo / iniziale
 
 
-
 switch ($request[4]) {
     case $dominio . '':
         require __DIR__ . '/home.php';
@@ -23,11 +22,16 @@ switch ($request[4]) {
     case $dominio . 'aboutus':
         require __DIR__ . '/aboutus.php';
         break;
+    case $dominio . 'comingsoon':
+        require __DIR__ . '/comingsoon.php';
+        break;
+    case $dominio . 'login':
+        require __DIR__ . '/login.php';
+        break;
     default:
         require __DIR__ . '/error404.php';
         echo '</br>RICHIESTA: </br>';
         foreach ($request as $key => $value) {
-            echo '</br>'. $key .' '. $value .' ';
+            echo '</br>' . $key . ' ' . $value . ' ';
         }
 }
-

@@ -1,4 +1,4 @@
-<div class="container mt-5 pt-5">
+<div class="container mt-5 pt-5 wow fadeIn animate__slower">
     <div class="row justify-content-center">
         <div class="col-md-5">
             <h2 class="text-center mb-4 text mainColor">Contattaci</h2>

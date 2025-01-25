@@ -1,4 +1,4 @@
-<div class="container pt-5">
+<div class="container pt-5 wow fadeIn animate__slower">
     <div class="text-center m-5">
         <p class="text mainColor">Domande frequenti</p>
     </div>
