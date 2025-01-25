@@ -1,9 +1,11 @@
-<?php define("TITLE", "home"); ?>
+<?php
+$dominio = '/progetti/learnenglisheasily/learnenglisheasily';
+$request = $_SERVER['REQUEST_URI'];
 
-<?php include('./layouts/header.php') ?>
-<?php include('./section/principal.php') ?>
-<?php include('./section/logos.php') ?>
-<?php include('./section/cosaFacciamo.php') ?>
-<?php include('./section/FAQ.php') ?>
-<?php include('./section/contatti.php') ?>
-<?php include('./layouts/foother.php') ?>
+switch ($request) {
+    case $dominio.'/':
+        require __DIR__.'/home.php';
+        break;
+    default:
+        echo 'error 404 page not found';
+}
