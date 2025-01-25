@@ -10,18 +10,18 @@
     <div class="row pb-5 ">
         <div class="col-md-12 ">
             <div class="row ">
-                <div class="col-md-12 p-2 ">
+                <div class="col-md-12 p-2 animate__animated animate__fadeIn">
                     <div style=" height: 450px; background-color: #f5f5f5; border: 1px rgb(0, 0, 0); border-radius: 12px;" ></div>
                 </div>
             </div>
             <div class="row ">
-                <div class="col-md-4 p-2 ">
+                <div class="col-md-4 p-2 animate__animated animate__fadeIn">
                     <div style="height: 287px; background-color: #f5f5f5; border: 1px rgb(0, 0, 0); border-radius: 12px;" ></div>
                 </div>
-                <div class="col-md-4 p-2 ">
+                <div class="col-md-4 p-2 animate__animated animate__fadeIn">
                     <div style="height: 287px; background-color: #f5f5f5; border: 1px rgb(0, 0, 0); border-radius: 12px;" ></div>
                 </div>
-                <div class="col-md-4 p-2 ">
+                <div class="col-md-4 p-2 animate__animated animate__fadeIn">
                     <div style="height: 287px; background-color: #f5f5f5; border: 1px rgb(0, 0, 0); border-radius: 12px;" ></div>
                 </div>
             </div>

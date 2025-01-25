@@ -13,8 +13,9 @@
     <!--BOOTSTRAP-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animation.style@1.0.0/animation.min.css">
+    <!-- link animazioni -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animation.style@1.0.0/animation.min.css">
 
         <title><?PHP echo TITLE ?></title>
 </head>
@@ -23,19 +24,19 @@
         <div class="menu-container">
             <div class="container">
                 <button class="menu-button">
-                    <a href="./index.php" class="text lightGray down">Home</a>
+                    <a href="./" class="text lightGray down">Home</a>
                 </button>
                 <button class="menu-button">
-                    <a href="./feedback.php" class="text lightGray down">Feedback</a>
+                    <a href="./feedback" class="text lightGray down">Feedback</a>
                 </button>
                 <button class="menu-button">
-                    <a href="#" class="text lightGray down">Grammar</a>
+                    <a href="./grammar" class="text lightGray down">Grammar</a>
                 </button>
                 <button class="menu-button">
-                    <a href="#" class="text lightGray down">Vocabulary</a>
+                    <a href="./vocabulary" class="text lightGray down">Vocabulary</a>
                 </button>
                 <button class="menu-button">
-                    <a href="./aboutus.php" class="text lightGray down">About Us</a>
+                    <a href="./aboutus" class="text lightGray down">About Us</a>
                 </button>
             </div>
         </div>
