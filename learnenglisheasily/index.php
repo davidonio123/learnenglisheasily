@@ -28,6 +28,9 @@ switch ($request[4]) {
     case $dominio . 'login':
         require __DIR__ . '/login.php';
         break;
+    case $dominio . 'signin':
+        require __DIR__ . '/signin.php';
+        break;
     default:
         require __DIR__ . '/error404.php';
         echo '</br>RICHIESTA: </br>';
