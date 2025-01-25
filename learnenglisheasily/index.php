@@ -1,9 +1,10 @@
 <?php
 $dominio = '/progetti/learnenglisheasily/learnenglisheasily';
+$dominio = '';
 $request = $_SERVER['REQUEST_URI'];
 $request = explode('/', $request); // attenzione salva una stringa vuota che sarebbe lo / iniziale
 
-switch ($request[1]) {
+switch ($request[4]) {
     case $dominio . '':
         require __DIR__ . '/home.php';
         break;
@@ -22,4 +23,8 @@ switch ($request[1]) {
         break;
     default:
         require __DIR__ . '/error404.php';
+        echo '</br>RICHIESTA: </br>';
+        foreach ($request as $key => $value) {
+            echo '</br>'. $key .' '. $value .' ';
+        }
 }
