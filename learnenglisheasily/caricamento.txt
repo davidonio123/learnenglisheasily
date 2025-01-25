@@ -3,10 +3,15 @@ CARICAMENTO SITO
 <iframe src="https://lottie.host/embed/366e6604-35ec-4195-a465-5f394dafabc9/7M222B51GM.lottie"></iframe>
 
 
+
+
+TIZIO CHE PROGRAMMA
+<iframe src="https://lottie.host/embed/6759eb6c-693d-4bcd-82ff-678d6e7d8c88/9Y1gajLcQN.lottie"></iframe>
+
  <script
-            src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
-            type="module"
-            ></script>
+        src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
+        type="module"
+ ></script>
                 <dotlottie-player
                 src="https://lottie.host/6759eb6c-693d-4bcd-82ff-678d6e7d8c88/9Y1gajLcQN.lottie"
                 background="transparent"
@@ -16,5 +21,41 @@ CARICAMENTO SITO
                 autoplay
                 ></dotlottie-player>
 
-TIZIO CHE PROGRAMMA
-<iframe src="https://lottie.host/embed/6759eb6c-693d-4bcd-82ff-678d6e7d8c88/9Y1gajLcQN.lottie"></iframe>
+SISTEMA PER PA PAGINA DI CARICAMENTO
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="path/to/your/styles.css"> <!-- Update with actual path -->
+    <title>Loading Screen</title>
+    <style>
+        /* Basic styles for loading screen */
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0; /* Optional background color */
+        }
+        #loading {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="loading">
+        <iframe src="https://lottie.host/embed/366e6604-35ec-4195-a465-5f394dafabc9/7M222B51GM.lottie" style="width: 300px; height: 300px;"></iframe>
+    </div>
+    <script>
+        // Optional: Redirect to the main content after a delay
+        setTimeout(function() {
+            window.location.href = ''; // Change to your main page
+        }, 3000); // Adjust time as needed
+    </script>
+</body>
+</html>
