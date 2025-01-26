@@ -22,6 +22,11 @@ ti levo di mezzo [t'accir] grazie <3 ) */
     --small: 20px;
     --up: 24px;
     --down: 24px;
+
+    /* animate.style */
+
+    --animate-duration: 800ms;
+    --animate-delay: 0.9s;
 }
 /*      TESTI       */
 

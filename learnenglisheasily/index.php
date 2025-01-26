@@ -38,3 +38,5 @@ switch ($request[4]) {
             echo '</br>' . $key . ' ' . $value . ' ';
         }
 }
+
+// provare ad inmplementare un switch di contesto delle variabili con i metodi post in modo da evitare di switchare agli API di js
