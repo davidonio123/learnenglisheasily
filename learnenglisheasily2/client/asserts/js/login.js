@@ -26,6 +26,7 @@ function login() {
                         id: user.id,
                         name: user.name,
                         surname: user.surname,
+                        class: user.class,
                         email: user.email,
                         password: user.password
                     })
@@ -33,7 +34,7 @@ function login() {
                     .then(data => {
                         console.log('Stato sessione:', data.user)
                         window.location.href = "welcome"; // Reindirizzamento manuale
-                    }).catch(error => console.error('Errore:', error));
+                    })
                 // window.location.href = "welcome";
             }
 

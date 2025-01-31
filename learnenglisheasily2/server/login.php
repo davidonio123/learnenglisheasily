@@ -58,6 +58,7 @@ for($i=0;$i<count($users->data); $i++){
                                     'id' => $users->data[$i]->id,
                                     'name' => $users->data[$i]->name,
                                     'surname' => $users->data[$i]->surname,
+                                    'class' => $users->data[$i]->class,
                                     'email' => $users->data[$i]->email,
                                     'password' => $users->data[$i]->password
                                 ]]);

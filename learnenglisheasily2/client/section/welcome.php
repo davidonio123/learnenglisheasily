@@ -13,12 +13,12 @@
             <!-- informazioni -->
             <div class="col-md-8 p-4">
                 <p class="text mainColor mid">
-                    Davide Barretta 4BI
+                    <span id="UserName">Davide</span> <span id="UserSurname">Barretta</span> <span id="UserClass">4BI</span>
                     <span class="badge badge-novizio ml-2">Studente</span>
                     <span class="badge badge-novizio ml-2">Programmatore</span>
                 </p>
                 <p class="text lightGray down mt-3">
-                    Email: davide.barretta21@iti-marconi.edu.it
+                    Email: <span id="UserEmail">davide.barretta21@iti-marconi.edu.it</span>
                 </p>
                 <p class="text lightGray mt-3">
                     240 punti
@@ -31,11 +31,12 @@
         <!-- esercizi svolti -->
         <div class="row mt-3 p-4" style="border-radius: 12px;height:auto; overflow: hidden; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
             <p class="text mainColor mid mb-3">Esercizi svolti</p>
-                <?php include("./function/welcome.php") ?>
+                nessun esercizio svolto fin ora.
             </div>
         </div>
     </div>
 </div>
+<script src="./asserts/js/welcome.js"></script>
 <style>
     .badge-novizio {
         background-color: var(--mainColorLight);
