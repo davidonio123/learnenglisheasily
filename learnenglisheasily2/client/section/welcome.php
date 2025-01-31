@@ -1,7 +1,7 @@
 <div class="container text-center mt-4 pt-4 mb-2 pb-2">
     <p class="text mainColor ">Welcome to your private page</p>
 </div>
-
+<script src="./asserts/js/check_session.js"></script>
 <div class="w-100">
     <div class="container">
         <!-- profilo utente -->

@@ -21,7 +21,7 @@ function login() {
                 // startare la sessione
                 user = data.data;
 
-                fetch('http://localhost/progetti/testsimone2/server/start_session.php', {
+                fetch('http://localhost/progetti/learnenglisheasily/learnenglisheasily2/server/start_session.php', {
                     method: "POST",
                     body: JSON.stringify({
                         id: user.id,
@@ -32,12 +32,8 @@ function login() {
                     })
                 }).then(response => response.json())
                     .then(data => {
-                        console.log('Stato sessione:', data)
-
-
-
-
-                        // window.location.href = "welcome"; // Reindirizzamento manuale
+                        console.log('Stato sessione:', data.user)
+                        window.location.href = "welcome"; // Reindirizzamento manuale
                     }).catch(error => console.error('Errore:', error));
                 // window.location.href = "welcome";
             }

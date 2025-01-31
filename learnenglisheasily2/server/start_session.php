@@ -19,11 +19,9 @@ $_SESSION['user']['surname'] = $data["surname"];
 $_SESSION['user']['email'] = $data["email"];
 $_SESSION['user']['password'] = $data["password"];
 
-print_r($data);
-
 echo json_encode([
     'status' => 200,
     'message' => 'session started',
-    'session' => $_SESSION['user'],
+    'user' => $_SESSION['user'],
     'session_destroy()' => $session
 ]);
