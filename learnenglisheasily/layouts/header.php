@@ -28,16 +28,16 @@
                     <a href="./" class="text lightGray down">Home</a>
                 </button>
                 <button class="menu-button">
-                    <a href="./feedback" class="text lightGray down">Feedback</a>
+                    <a href="./feedback.php" class="text lightGray down">Feedback</a>
                 </button>
                 <button class="menu-button">
-                    <a href="./comingsoon" class="text lightGray down">Grammar</a>
+                    <a href="./comingsoon.php" class="text lightGray down">Grammar</a>
                 </button>
                 <button class="menu-button">
-                    <a href="./comingsoon" class="text lightGray down">Vocabulary</a>
+                    <a href="./comingsoon.php" class="text lightGray down">Vocabulary</a>
                 </button>
                 <button class="menu-button">
-                    <a href="./aboutus" class="text lightGray down">About Us</a>
+                    <a href="./aboutus.php" class="text lightGray down">About Us</a>
                 </button>
             </div>
         </div>
