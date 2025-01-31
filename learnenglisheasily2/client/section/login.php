@@ -11,9 +11,10 @@
                     <label for="password" class="form-label text lightGray down">Password</label>
                     <input type="password" name="password" class="form-control" id="password" aria-describedby="password" placeholder="Inserisci qui la tua password">
                 </div>
-                <button type="submit" class="btn btn-primary button mainColor" onclick="login()">Invia</button>
+                <div class="text lightGray down pb-3" style="color: red;" id="errorDiv"></div>
+                <button type="button" class="btn btn-primary button mainColor" onclick="login()">Invia</button>
                 <div class="text-center">
-                    <span class="text lightGray down">Password dimenticata?</span>
+                    <span class="text lightGray red down">Password dimenticata?</span>
                     <a href="#">Recupera</a>
                 </div>
             </form>

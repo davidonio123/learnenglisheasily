@@ -8,15 +8,21 @@ function login() {
         body: JSON.stringify({
             email: email.value,
             password: password.value
-        }).then(function(response) {
-            return response.json();
-        }).then(function(json) {
-            // quando risponde
-            dati = json;
-            allert();
-            console.log(dati);
         })
     })
+    .then(response => response.json())
+    .then(data => {
+        // console.log('Stato sessione:', data)
+        if(data.status != 200){
+            let errorDiv = document.getElementById("errorDiv");
 
-    console.log('attesa di risposta..');
+            errorDiv.innerHTML = data.message;
+        }else{
+            // startare la sessione
+            window.location.href = "welcome";
+        }
+        
+    }).catch(error => console.error('Errore:', error));
+
+    // console.log('attesa di risposta..');
 }
