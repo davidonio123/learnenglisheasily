@@ -10,19 +10,39 @@ function login() {
             password: password.value
         })
     })
-    .then(response => response.json())
-    .then(data => {
-        // console.log('Stato sessione:', data)
-        if(data.status != 200){
-            let errorDiv = document.getElementById("errorDiv");
+        .then(response => response.json())
+        .then(data => {
+            console.log('Stato sessione:', data)
+            if (data.status != 200) {
+                let errorDiv = document.getElementById("errorDiv");
 
-            errorDiv.innerHTML = data.message;
-        }else{
-            // startare la sessione
-            window.location.href = "welcome";
-        }
-        
-    }).catch(error => console.error('Errore:', error));
+                errorDiv.innerHTML = data.message;
+            } else {
+                // startare la sessione
+                user = data.data;
+
+                fetch('http://localhost/progetti/testsimone2/server/start_session.php', {
+                    method: "POST",
+                    body: JSON.stringify({
+                        id: user.id,
+                        name: user.name,
+                        surname: user.surname,
+                        email: user.email,
+                        password: user.password
+                    })
+                }).then(response => response.json())
+                    .then(data => {
+                        console.log('Stato sessione:', data)
+
+
+
+
+                        // window.location.href = "welcome"; // Reindirizzamento manuale
+                    }).catch(error => console.error('Errore:', error));
+                // window.location.href = "welcome";
+            }
+
+        })
 
     // console.log('attesa di risposta..');
 }

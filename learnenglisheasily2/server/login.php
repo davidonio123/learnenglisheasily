@@ -52,7 +52,15 @@ $password = md5($password);
 // cerca se esiste lutente
 for($i=0;$i<count($users->data); $i++){
     if($users->data[$i]->email == $email && $users->data[$i]->password == $password){
-        echo json_encode(['status'=> 200, 'message'=> 'OK']);
+        echo json_encode(['status'=> 200,
+                                'message'=> 'OK',
+                                'data' => [
+                                    'id' => $users->data[$i]->id,
+                                    'name' => $users->data[$i]->name,
+                                    'surname' => $users->data[$i]->surname,
+                                    'email' => $users->data[$i]->email,
+                                    'password' => $users->data[$i]->password
+                                ]]);
         die();
     }
 

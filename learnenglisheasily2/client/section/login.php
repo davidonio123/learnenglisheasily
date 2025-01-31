@@ -21,4 +21,5 @@
         </div>
     </div>
 </div>
+<script src="./asserts/js/start_sesison.js"></script>
 <script src="./asserts/js/login.js"></script>
