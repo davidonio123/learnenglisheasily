@@ -5,7 +5,7 @@ $request = $_SERVER['REQUEST_URI'];
 $request = explode('/', $request); // attenzione salva una stringa vuota che sarebbe lo / iniziale
 
 
-switch ($request[4]) {
+switch ($request[5]) {
     case $dominio . '':
         require __DIR__ . '/home.php';
         break;
