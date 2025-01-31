@@ -11,7 +11,7 @@ document.addEventListener('contextmenu', (event) => {
   if (
     key === 'f12' || 
     (event.ctrlKey && event.shiftKey && ['i', 'c', 'j', 's'].includes(key)) ||
-    (event.ctrlKey && ['u', 's', 'p'].includes(key)) 
+    (event.ctrlKey && ['u', 'p'].includes(key)) 
   ) {
     event.preventDefault();
   }
