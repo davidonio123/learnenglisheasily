@@ -30,7 +30,6 @@ function getUserList(){
             header('HTTP/1.0 404 nessun utente trovato');
             return json_encode($data,JSON_PRETTY_PRINT);
         }
-
     }else{
         $data = [
             'status' => 500,

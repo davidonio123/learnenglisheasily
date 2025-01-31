@@ -5,11 +5,11 @@
         <div class="row">
             <!-- Testo sulla sinistra -->
             <div class="col-6 text-start">
-                <p class="text lightGray down p-md-5 pb-5">it MarconiPilla <?php echo date("Y") ?></p>
+                <p class="text lightGray down p-md-5 pb-5 sx">it MarconiPilla <?php echo date("Y") ?></p>
             </div>
             <!-- Testo sulla destra -->
             <div class="col-6 text-end">
-                <p class="text lightGray down p-md-5 pb-5">Carmela Pietrangelo</p>
+                <p class="text lightGray down p-md-5 pb-5 dx">Carmela Pietrangelo</p>
             </div>
         </div>
     </div>
