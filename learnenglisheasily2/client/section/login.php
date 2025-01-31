@@ -1,4 +1,4 @@
-<script src="./asserts/js/check_session.js"></script>
+<script src="./asserts/js/stop_session.js" defer></script>
 <div class="container mt-5 pt-5 mb-5 pb-5">
     <div class="row">
         <div class="col-lg-6 offset-lg-3">
@@ -22,5 +22,4 @@
         </div>
     </div>
 </div>
-<script src="./asserts/js/start_sesison.js"></script>
 <script src="./asserts/js/login.js"></script>
