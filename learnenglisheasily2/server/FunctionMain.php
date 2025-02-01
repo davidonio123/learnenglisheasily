@@ -60,7 +60,7 @@ function getCommentList(){
         }else{
             $data = [
                 'status' => -1,
-                'message'=> 'nessun commento trovato'
+                'message'=> 'non ci sono comenti :)'
             ];
             return json_encode($data,JSON_PRETTY_PRINT);
         }
