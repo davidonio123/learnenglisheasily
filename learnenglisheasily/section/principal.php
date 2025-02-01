@@ -8,10 +8,10 @@
                     quiz, e tanto altro ancora…</h2>
                 <div class="row text-center ">
                     <div>
-                        <button class="button mainColor shadow btn m-1 hover" type="submit" onclick="location.href='./login'">
+                        <button class="button mainColor shadow btn m-1 hover" type="submit" onclick="location.href='./login.php'">
                             <p>Log in</p>
                         </button>
-                        <button class="button mainColorLight btn m-1 hover" type="submit" onclick="location.href='./signin'" >
+                        <button class="button mainColorLight btn m-1 hover" type="submit" onclick="location.href='./signin.php'" >
                             <p>Sign up</p>
                         </button>
                     </div>
