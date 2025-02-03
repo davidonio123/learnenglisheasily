@@ -8,10 +8,10 @@
                     quiz, e tanto altro ancora…</h2>
                 <div class="row text-center ">
                     <div>
-                        <button class="button mainColor shadow btn m-1 hover" type="submit" onclick="location.href='./login'">
+                        <button class="button mainColor shadow btn m-1 hover" type="submit" id="logInBtn">
                             <p>Log in</p>
                         </button>
-                        <button class="button mainColorLight btn m-1 hover" type="submit" onclick="location.href='./signin'">
+                        <button class="button mainColorLight btn m-1 hover" type="submit" id="signUpBtn">
                             <p>Sign up</p>
                         </button>
                     </div>
@@ -46,3 +46,4 @@
     </style>
 </div>
 <script src="./asserts/js/carosello.js" ></script>
+<script src="./asserts/js/principal.js" ></script>

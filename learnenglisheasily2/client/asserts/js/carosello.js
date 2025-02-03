@@ -1,3 +1,4 @@
+// aggiunge le immagini al carosello
 document.addEventListener("DOMContentLoaded", function () {
     const carouselImages = document.getElementById('carosello');
     const imageFolder = './asserts/img/carosello_home/';
@@ -28,3 +29,4 @@ document.addEventListener("DOMContentLoaded", function () {
 
     conta();
 });
+

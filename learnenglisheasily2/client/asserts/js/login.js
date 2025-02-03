@@ -1,4 +1,6 @@
-function login() {
+let logIn = document.getElementById("logInBtn");
+
+logIn.addEventListener('click', () => {
     let email = document.getElementById("email");
     let password = document.getElementById("password");
 
@@ -41,4 +43,4 @@ function login() {
         })
 
     // console.log('attesa di risposta..');
-}
+})

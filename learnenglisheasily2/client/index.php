@@ -29,8 +29,8 @@ switch ($request[5]) {
     case $dominio . 'login':
         require __DIR__ . '/login.php';
         break;
-    case $dominio . 'signin':
-        require __DIR__ . '/signin.php';
+    case $dominio . 'signup':
+        require __DIR__ . '/signup.php';
         break;
     case $dominio . 'welcome':
         require __DIR__ . '/welcome.php';
