@@ -22,4 +22,4 @@
         </div>
     </div>
 </div>
-<script src="./asserts/js/login.js"></script>
+<script src="./client/asserts/js/login.js"></script>

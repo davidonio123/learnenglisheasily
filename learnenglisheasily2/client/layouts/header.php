@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.4.0/animate.min.css">
     <!-- WOW JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-    <script src="./asserts/js/wow.js"></script>
+    <script src="./client/asserts/js/wow.js"></script>
     <!-- custom css -->
-    <link rel="stylesheet" href="./asserts/css/foother.css">
-    <link rel="stylesheet" href="./asserts/css/main.css">
-    <link rel="stylesheet" href="./asserts/css/header.css">
+    <link rel="stylesheet" href="./client/asserts/css/foother.css">
+    <link rel="stylesheet" href="./client/asserts/css/main.css">
+    <link rel="stylesheet" href="./client/asserts/css/header.css">
     <title><?PHP echo TITLE ?></title>
 </head>
 

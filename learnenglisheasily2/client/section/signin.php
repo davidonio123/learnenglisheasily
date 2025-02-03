@@ -60,7 +60,7 @@
                 <button type="submit" class=" btn btn-primary button mainColor">Invia</button>
                 <div class="text-center">
                     <span>Hai già un account?</span>
-                    <a href="./login.php">Log-in</a>
+                    <a href="./login">Log-in</a>
                 </div>
             </form>
         </div>

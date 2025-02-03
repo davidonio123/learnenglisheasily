@@ -19,7 +19,7 @@
                     <textarea class="form-control" id="message" rows="4" placeholder="Il tuo messaggio ..."></textarea>
                 </div>
                 <div class="text-center">
-                    <button type="submit" class="btn btn-primary w-100 button mainColor"><p>Invia</p></button>
+                    <button type="button" class="btn btn-primary w-100 button mainColor"><p>Invia</p></button>
                 </div>
             </form>
         </div>

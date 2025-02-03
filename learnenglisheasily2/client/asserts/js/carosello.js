@@ -1,7 +1,7 @@
 // aggiunge le immagini al carosello
 document.addEventListener("DOMContentLoaded", function () {
     const carouselImages = document.getElementById('carosello');
-    const imageFolder = './asserts/img/carosello_home/';
+    const imageFolder = './client/asserts/img/carosello_home/';
 
     //CONTO LE IMMAGINI NELLA CARTELLA  imageFolder
 

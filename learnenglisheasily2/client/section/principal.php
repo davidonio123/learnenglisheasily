@@ -45,4 +45,4 @@
         }
     </style>
 </div>
-<script src="./asserts/js/carosello.js" ></script>
+<script src="./client/asserts/js/carosello.js" ></script>

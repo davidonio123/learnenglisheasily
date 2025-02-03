@@ -1,5 +1,5 @@
-RewriteEngine On
-RewriteBase /progetti/learnenglisheasily/learnenglisheasily2/client/
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^(.+)$ index.php [QSA,L]
+<Files ~ ".php">
+Order allow,deny
+Deny from all
+Satisfy All
+</Files>

@@ -12,7 +12,7 @@
         <div class="col-md-4" id="col3"></div>
     </div>
 </div>
-<script src="./asserts/js/feedback.js"></script>
+<script src="./client/asserts/js/feedback.js"></script>
 <style>
     .feedback-card {
         border: 1px solid;

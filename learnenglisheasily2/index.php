@@ -1,45 +1,44 @@
 <?php
+header("Content-Security-Policy: script-src 'self' https://cdnjs.cloudflare.com https://cdn.jsdelivr.net; base-uri 'none'; form-action 'none';"); //csp per la Content-Security-Policy (NON MODIFICARE)
+
 $dominio = '/progetti/learnenglisheasily/learnenglisheasily';
 $dominio = '';
 $request = $_SERVER['REQUEST_URI'];
 $request = explode('/', $request); // attenzione salva una stringa vuota che sarebbe lo / iniziale
-header("Content-Security-Policy: script-src 'self' https://cdnjs.cloudflare.com https://cdn.jsdelivr.net; base-uri 'none'; form-action 'none';"); //csp per la Content-Security-Policy (NON MODIFICARE)
-
 
 switch ($request[count($request)-1]) {
     case $dominio . '':
-        require __DIR__ . '/home.php';
+        require __DIR__ . '/client/home.php';
         break;
     case $dominio . 'feedback':
-        require __DIR__ . '/feedback.php';
+        require __DIR__ . '/client/feedback.php';
         break;
     case $dominio . 'grammar':
-        require __DIR__ . '/comingsoon.php';
+        require __DIR__ . '/client/comingsoon.php';
         break;
-
     case $dominio . 'vocabulary':
-        require __DIR__ . '/comingsoon.php';
+        require __DIR__ . '/client/comingsoon.php';
         break;
     case $dominio . 'aboutus':
-        require __DIR__ . '/aboutus.php';
+        require __DIR__ . '/client/aboutus.php';
         break;
     case $dominio . 'comingsoon':
-        require __DIR__ . '/comingsoon.php';
+        require __DIR__ . '/client/comingsoon.php';
         break;
     case $dominio . 'login':
-        require __DIR__ . '/login.php';
+        require __DIR__ . '/client/login.php';
         break;
     case $dominio . 'signup':
-        require __DIR__ . '/signup.php';
+        require __DIR__ . '/client/signup.php';
         break;
     case $dominio . 'welcome':
-        require __DIR__ . '/welcome.php';
+        require __DIR__ . '/client/welcome.php';
         break;
     case $dominio . 'recupera':
-        require __DIR__ . '/recuperaPassword.php';
+        require __DIR__ . '/client/recuperaPassword.php';
         break;
     default:
-        require __DIR__ . '/error404.php';
+        require __DIR__ . '/client/error404.php';
         echo '</br>RICHIESTA: </br>';
         foreach ($request as $key => $value) {
             echo '</br>' . $key . ' ' . $value . ' ';

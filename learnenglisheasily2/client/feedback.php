@@ -1,5 +1,5 @@
 <?php define("TITLE", "feedback"); ?>
 
-<?php include('./layouts/header.php') ?>
-<?php include('./section/feedback.php') ?>
-<?php include('./layouts/foother.php') ?>
+<?php include('./client/layouts/header.php') ?>
+<?php include('./client/section/feedback.php') ?>
+<?php include('./client/layouts/foother.php') ?>
