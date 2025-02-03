@@ -43,6 +43,7 @@ switch ($request[count($request)-1]) {
         foreach ($request as $key => $value) {
             echo '</br>' . $key . ' ' . $value . ' ';
         }
-}
 
 // provare ad inmplementare un switch di contesto delle variabili con i metodi post in modo da evitare di switchare agli API di js
+} ?>
+<script src="./client/asserts/js/theme.js"></script>
