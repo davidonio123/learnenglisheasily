@@ -10,8 +10,8 @@
                         <button class="button mainColorLight btn m-1 hover" type="submit">
                             <p>Learn more</p>
                         </button>
-                        <button class="button mainColor shadow btn m-1 hover" type="submit">
-                            <p>Sign in</p>
+                        <button class="button mainColor shadow btn m-1 hover" type="submit" onclick="location.href='./signin'">
+                            <p>Sign up</p>
                         </button>
                     </div>
                 </div>

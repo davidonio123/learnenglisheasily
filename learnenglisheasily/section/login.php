@@ -44,7 +44,7 @@
                 <button type="submit" class="btn btn-primary button mainColor">Invia</button>
                 <div class="text-center">
                     <span class="text lightGray down">Password dimenticata?</span>
-                    <a href="#">Recupera</a>
+                    <a href="././recuperaPassword.php">Recupera</a>
                 </div>
             </form>
         </div>

@@ -3,6 +3,7 @@ $dominio = '/progetti/learnenglisheasily/learnenglisheasily';
 $dominio = '';
 $request = $_SERVER['REQUEST_URI'];
 $request = explode('/', $request); // attenzione salva una stringa vuota che sarebbe lo / iniziale
+header("Content-Security-Policy: script-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://cdn.jsdelivr.net; base-uri 'none'; form-action 'none';"); //csp per la Content-Security-Policy (NON MODIFICARE)
 
 
 switch ($request[5]) {
