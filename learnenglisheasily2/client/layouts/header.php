@@ -17,10 +17,21 @@
     <link rel="stylesheet" href="./client/asserts/css/foother.css">
     <link rel="stylesheet" href="./client/asserts/css/main.css">
     <link rel="stylesheet" href="./client/asserts/css/header.css">
+    <!--SWITCH THEME-->
+    <link rel="stylesheet" href="./client/asserts/css/theme.css">    
     <title><?PHP echo TITLE ?></title>
 </head>
 
 <body style="min-height: auto;" data-bs-theme="ligth">
+    <!-- switch per il tema --> 
+    <div class="position"> 
+        <label class="ui-switch">
+        <input type="checkbox" id="switch">
+        <div class="slider">
+            <div class="circle"></div>
+        </div>
+        </label>
+    </div>
     <div class="header">
         <div class="menu-container">
             <div class="container">

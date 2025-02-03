@@ -38,18 +38,18 @@ $password = $data['password'];
 if ($email == "" || $password == "") {
     if ($email == "") {
         if ($password == "") {
-            echo json_encode(['status' => -1, 'message' => 'email and password is empty']);
+            echo json_encode(['status' => -1, 'message' => 'Nessun campo inserito!']);
             die();
         }
-        echo json_encode(['status' => -1, 'message' => 'email is empty']);
+        echo json_encode(['status' => -1, 'message' => 'Inserisci la e-mail']);
         die();
     }
-    echo json_encode(['status' => -1, 'message' => 'password is empty']);
+    echo json_encode(['status' => -1, 'message' => 'Inserisci la password']);
     die();
 }
 
 $password = md5($password);
-// cerca se esiste lutente
+// cerca se esiste l'utente
 for($i=0;$i<count($users->data); $i++){
     if($users->data[$i]->email == $email && $users->data[$i]->password == $password){
         echo json_encode(['status'=> 200,
@@ -71,5 +71,5 @@ for($i=0;$i<count($users->data); $i++){
     }
 }
 
-echo json_encode(['status'=> -1, 'message'=> 'email non registrata effettua il login o riprova']);
+echo json_encode(['status'=> -1, 'message'=> 'E-mail non registrata effettua il login o riprova']);
 die();
