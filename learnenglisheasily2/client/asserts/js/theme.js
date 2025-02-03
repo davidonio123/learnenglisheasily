@@ -1,12 +1,9 @@
 let switchTheme = document.getElementById("switch")
 
-switchTheme.addEventListener("change", ()=> {
-    let body = document.body
+document.getElementById("switch").addEventListener("click", ()=> {
     if (switchTheme.checked) {
-        body.data-bs-theme.remove("light-theme")
-        body.data-bs-theme.add("dark-theme")
+        document.body.setAttribute("data-bs-theme", "dark");
     } else {
-        body.data-bs-theme.remove("dark-theme")
-        body.data-bs-theme.add("light-theme")
+        document.body.setAttribute("data-bs-theme", "light");
     }
 })
