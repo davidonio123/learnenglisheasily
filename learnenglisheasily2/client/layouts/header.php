@@ -20,7 +20,7 @@
     <title><?PHP echo TITLE ?></title>
 </head>
 
-<body style="min-height: auto;" data-bs-theme="dark">
+<body style="min-height: auto;" data-bs-theme="ligth">
     <div class="header">
         <div class="menu-container">
             <div class="container">
