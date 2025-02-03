@@ -46,4 +46,3 @@
     </style>
 </div>
 <script src="./asserts/js/carosello.js" ></script>
-<script src="./asserts/js/principal.js" ></script>

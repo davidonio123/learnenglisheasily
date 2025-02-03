@@ -7,3 +7,5 @@
 <?php include('./section/FAQ.php') ?>
 <?php include('./section/contatti.php') ?>
 <?php include('./layouts/foother.php') ?>
+
+<script src="./asserts/js/principal.js"></script>

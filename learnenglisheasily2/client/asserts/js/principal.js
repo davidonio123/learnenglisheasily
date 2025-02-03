@@ -1,5 +1,6 @@
-let logIn = document.getElementById("logInBtn");
+let logIn = document.getElementById("logInBtn")
 let signUp = document.getElementById("signUpBtn")
+let signUp2 = document.getElementById("signUpBtn2")
 
 
 logIn.addEventListener('click', ()=>{
@@ -7,5 +8,9 @@ logIn.addEventListener('click', ()=>{
 })
 
 signUp.addEventListener('click', ()=>{
+    window.location.href = "signup"; // Reindirizzamento manuale
+})
+
+signUp2.addEventListener('click', ()=>{
     window.location.href = "signup"; // Reindirizzamento manuale
 })
