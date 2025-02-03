@@ -6,7 +6,7 @@ $request = explode('/', $request); // attenzione salva una stringa vuota che sar
 header("Content-Security-Policy: script-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://cdn.jsdelivr.net; base-uri 'none'; form-action 'none';"); //csp per la Content-Security-Policy (NON MODIFICARE)
 
 
-switch ($request[5]) {
+switch ($request[count($request)-1]) {
     case $dominio . '':
         require __DIR__ . '/home.php';
         break;
@@ -34,6 +34,9 @@ switch ($request[5]) {
         break;
     case $dominio . 'welcome':
         require __DIR__ . '/welcome.php';
+        break;
+    case $dominio . 'recupera':
+        require __DIR__ . '/recuperaPassword.php';
         break;
     default:
         require __DIR__ . '/error404.php';

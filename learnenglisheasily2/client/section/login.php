@@ -16,7 +16,7 @@
                 <button type="button" class="btn btn-primary button mainColor" id="logInBtn">Invia</button>
                 <div class="text-center">
                     <span class="text lightGray red down">Password dimenticata?</span>
-                    <a href="#">Recupera</a>
+                    <a href="./recupera">Recupera</a>
                 </div>
             </form>
         </div>
