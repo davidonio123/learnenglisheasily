@@ -32,4 +32,8 @@
         font-size: 1rem;
         margin: 0;
     }
+
+    body{
+        color: #7c7c7c;
+    }
 </style>
