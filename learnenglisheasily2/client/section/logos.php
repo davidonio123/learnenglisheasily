@@ -18,7 +18,7 @@
             </div>
             <div class="col-3 c w-50 wow fadeIn animate__slower">
                 <i class="bi bi-instagram" style="font-size: 2rem;"></i>
-                <a class="p-2 text lightGray down"href="https://www.instagram.com/davide.barrettaa/">davide.barrettaa</a>
+                <a class="p-2 text lightGray down" href="https://www.instagram.com/davide.barrettaa/">davide.barrettaa</a>
             </div>
         </div>
     </div>
@@ -36,9 +36,4 @@
     .col-md-6.c{
         justify-content: space-around;
     }
-
-    i {
-        transform: translateY(-8px);
-    }
-    
 </style>
