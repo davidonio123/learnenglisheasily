@@ -4,7 +4,7 @@ logIn.addEventListener('click', () => {
     let email = document.getElementById("email");
     let password = document.getElementById("password");
 
-    fetch('http://localhost/progetti/learnenglisheasily/learnenglisheasily2/server/login.php', {
+    fetch(dominio+'/server/login.php', {
         method: "POST",
         body: JSON.stringify({
             email: email.value,
@@ -22,7 +22,7 @@ logIn.addEventListener('click', () => {
                 // startare la sessione
                 user = data.data;
 
-                fetch('http://localhost/progetti/learnenglisheasily/learnenglisheasily2/server/start_session.php', {
+                fetch(dominio+'/server/start_session.php', {
                     method: "POST",
                     body: JSON.stringify({
                         id: user.id,

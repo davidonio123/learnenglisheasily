@@ -1,4 +1,4 @@
-fetch('http://localhost/progetti/learnenglisheasily/learnenglisheasily2/server/feedback.php', {
+fetch(dominio+'/server/feedback.php', {
     method: "POST"
 }).then(response => response.json())
     .then(data => {

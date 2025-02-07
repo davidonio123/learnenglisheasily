@@ -1,6 +1,6 @@
 async function check() {
     try {
-        let response = await fetch('http://localhost/progetti/learnenglisheasily/learnenglisheasily2/server/check_session.php');
+        let response = await fetch(dominio+'/server/check_session.php');
         let data = await response.json();
         
         // console.log(data); // Debug per vedere la risposta del server
