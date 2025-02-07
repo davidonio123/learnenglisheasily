@@ -23,7 +23,6 @@
 <script src="./client/asserts/js/foother.js"></script>
 <!-- CUSTOM SCRIPT -->
 <script src="./client/asserts/js/disableAction.js"></script>
-<script src="./client/asserts/js/main.js"></script>
 </body>
 
 </html>

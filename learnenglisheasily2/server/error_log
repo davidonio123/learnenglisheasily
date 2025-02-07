@@ -1,0 +1,32 @@
+[07-Feb-2025 19:21:53 UTC] PHP Fatal error:  Uncaught TypeError: mysqli_query(): Argument #1 ($mysql) must be of type mysqli, string given in /home/cfkehjye/learnenglishbyus.istitutotecnicomarconipilla.edu.it/server/FunctionMain.php:9
+Stack trace:
+#0 /home/cfkehjye/learnenglishbyus.istitutotecnicomarconipilla.edu.it/server/FunctionMain.php(9): mysqli_query('mysql:host=loca...', 'SELECT * FROM u...')
+#1 /home/cfkehjye/learnenglishbyus.istitutotecnicomarconipilla.edu.it/server/login.php(18): getUserList()
+#2 {main}
+  thrown in /home/cfkehjye/learnenglishbyus.istitutotecnicomarconipilla.edu.it/server/FunctionMain.php on line 9
+[07-Feb-2025 19:24:41 UTC] PHP Fatal error:  Uncaught TypeError: mysqli_query(): Argument #1 ($mysql) must be of type mysqli, string given in /home/cfkehjye/learnenglishbyus.istitutotecnicomarconipilla.edu.it/server/FunctionMain.php:9
+Stack trace:
+#0 /home/cfkehjye/learnenglishbyus.istitutotecnicomarconipilla.edu.it/server/FunctionMain.php(9): mysqli_query('mysql:host=loca...', 'SELECT * FROM u...')
+#1 /home/cfkehjye/learnenglishbyus.istitutotecnicomarconipilla.edu.it/server/login.php(18): getUserList()
+#2 {main}
+  thrown in /home/cfkehjye/learnenglishbyus.istitutotecnicomarconipilla.edu.it/server/FunctionMain.php on line 9
+[07-Feb-2025 19:24:47 UTC] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on string in /home/cfkehjye/learnenglishbyus.istitutotecnicomarconipilla.edu.it/server/FunctionMain.php:10
+Stack trace:
+#0 /home/cfkehjye/learnenglishbyus.istitutotecnicomarconipilla.edu.it/server/login.php(18): getUserList()
+#1 {main}
+  thrown in /home/cfkehjye/learnenglishbyus.istitutotecnicomarconipilla.edu.it/server/FunctionMain.php on line 10
+[07-Feb-2025 19:24:57 UTC] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on string in /home/cfkehjye/learnenglishbyus.istitutotecnicomarconipilla.edu.it/server/FunctionMain.php:10
+Stack trace:
+#0 /home/cfkehjye/learnenglishbyus.istitutotecnicomarconipilla.edu.it/server/login.php(18): getUserList()
+#1 {main}
+  thrown in /home/cfkehjye/learnenglishbyus.istitutotecnicomarconipilla.edu.it/server/FunctionMain.php on line 10
+[07-Feb-2025 19:25:01 UTC] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on string in /home/cfkehjye/learnenglishbyus.istitutotecnicomarconipilla.edu.it/server/FunctionMain.php:10
+Stack trace:
+#0 /home/cfkehjye/learnenglishbyus.istitutotecnicomarconipilla.edu.it/server/login.php(18): getUserList()
+#1 {main}
+  thrown in /home/cfkehjye/learnenglishbyus.istitutotecnicomarconipilla.edu.it/server/FunctionMain.php on line 10
+[07-Feb-2025 19:25:23 UTC] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on string in /home/cfkehjye/learnenglishbyus.istitutotecnicomarconipilla.edu.it/server/FunctionMain.php:10
+Stack trace:
+#0 /home/cfkehjye/learnenglishbyus.istitutotecnicomarconipilla.edu.it/server/login.php(18): getUserList()
+#1 {main}
+  thrown in /home/cfkehjye/learnenglishbyus.istitutotecnicomarconipilla.edu.it/server/FunctionMain.php on line 10

@@ -1,6 +1,6 @@
 <?php
 // Dati per la connessione al database
-include("db_date.php");
+include("./server/db/db_date.php");
 
 try {
     // Creazione della connessione PDO 

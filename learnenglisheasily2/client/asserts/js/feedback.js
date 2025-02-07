@@ -1,4 +1,4 @@
-fetch(dominio+'/server/feedback.php', {
+fetch('./server/feedback.php', {
     method: "POST"
 }).then(response => response.json())
     .then(data => {

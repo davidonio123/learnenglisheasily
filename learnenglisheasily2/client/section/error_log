@@ -1,0 +1,24 @@
+[07-Feb-2025 15:48:53 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'cfkehjye_learnenglishbyus.user' doesn't exist in /home/cfkehjye/learnenglishbyus.istitutotecnicomarconipilla.edu.it/server/FunctionMain.php:9
+Stack trace:
+#0 /home/cfkehjye/learnenglishbyus.istitutotecnicomarconipilla.edu.it/server/FunctionMain.php(9): mysqli_query(Object(mysqli), 'SELECT * FROM u...')
+#1 /home/cfkehjye/learnenglishbyus.istitutotecnicomarconipilla.edu.it/server/login.php(20): getUserList()
+#2 {main}
+  thrown in /home/cfkehjye/learnenglishbyus.istitutotecnicomarconipilla.edu.it/server/FunctionMain.php on line 9
+[07-Feb-2025 17:10:16 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'cfkehjye_learnenglishbyus.user' doesn't exist in /home/cfkehjye/learnenglishbyus.istitutotecnicomarconipilla.edu.it/server/FunctionMain.php:9
+Stack trace:
+#0 /home/cfkehjye/learnenglishbyus.istitutotecnicomarconipilla.edu.it/server/FunctionMain.php(9): mysqli_query(Object(mysqli), 'SELECT * FROM u...')
+#1 /home/cfkehjye/learnenglishbyus.istitutotecnicomarconipilla.edu.it/server/login.php(20): getUserList()
+#2 {main}
+  thrown in /home/cfkehjye/learnenglishbyus.istitutotecnicomarconipilla.edu.it/server/FunctionMain.php on line 9
+[07-Feb-2025 17:11:18 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'cfkehjye_learnenglishbyus.user' doesn't exist in /home/cfkehjye/learnenglishbyus.istitutotecnicomarconipilla.edu.it/server/FunctionMain.php:9
+Stack trace:
+#0 /home/cfkehjye/learnenglishbyus.istitutotecnicomarconipilla.edu.it/server/FunctionMain.php(9): mysqli_query(Object(mysqli), 'SELECT * FROM u...')
+#1 /home/cfkehjye/learnenglishbyus.istitutotecnicomarconipilla.edu.it/server/login.php(20): getUserList()
+#2 {main}
+  thrown in /home/cfkehjye/learnenglishbyus.istitutotecnicomarconipilla.edu.it/server/FunctionMain.php on line 9
+[07-Feb-2025 17:11:28 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'cfkehjye_learnenglishbyus.user' doesn't exist in /home/cfkehjye/learnenglishbyus.istitutotecnicomarconipilla.edu.it/server/FunctionMain.php:9
+Stack trace:
+#0 /home/cfkehjye/learnenglishbyus.istitutotecnicomarconipilla.edu.it/server/FunctionMain.php(9): mysqli_query(Object(mysqli), 'SELECT * FROM u...')
+#1 /home/cfkehjye/learnenglishbyus.istitutotecnicomarconipilla.edu.it/server/login.php(20): getUserList()
+#2 {main}
+  thrown in /home/cfkehjye/learnenglishbyus.istitutotecnicomarconipilla.edu.it/server/FunctionMain.php on line 9

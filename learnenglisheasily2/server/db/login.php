@@ -3,7 +3,9 @@
 header("Content-Type: application/json");
 
 
-include("./server/FunctionMain.php");
+
+
+include(__DIR__ . '/FunctionMain.php');
 $requestMethod = $_SERVER["REQUEST_METHOD"];
 
 // controllo se il metodo di richiesta e POST se diverso da errore

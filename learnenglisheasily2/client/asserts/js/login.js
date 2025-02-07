@@ -4,7 +4,7 @@ logIn.addEventListener('click', () => {
     let email = document.getElementById("email");
     let password = document.getElementById("password");
 
-    fetch(dominio+'/server/login.php', {
+    fetch('./server/login.php', {
         method: "POST",
         body: JSON.stringify({
             email: email.value,

@@ -1,6 +1,6 @@
 <?php
 
-include("./db/db_connection.php");
+include("./server/db/db_connection.php");
 function getUserList(){
 
     global $conn;
