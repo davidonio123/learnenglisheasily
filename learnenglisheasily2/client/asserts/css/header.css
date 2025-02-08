@@ -1,12 +1,11 @@
 .header{
-    height: 1fr;
+    height: auto; /* Changed from 1fr to auto */
     width: auto;
     display: flex;
     justify-content: center;
     align-items: center;
     border-bottom: 1px solid lightgray;
-    background-color: transparent;
-    
+    background-color: rgba(255, 255, 255, 0.9); /* Changed to a semi-transparent white for better visibility */
 }
 
 .menu-container{
@@ -14,12 +13,10 @@
     justify-content: space-between;
 }
 
-
-
 .menu-button{
     height: 50px;
-    width:fit-content;
-    margin:8px;
+    width: fit-content;
+    margin: 8px;
     background-color: transparent;
     border: none;
     font-size: medium;
