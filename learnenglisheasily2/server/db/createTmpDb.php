@@ -1,13 +1,23 @@
 <?php
 // Dati per la connessione al database
-include("./server/db/db_date.php");
+$host = "localhost"; // Es. localhost o IP del server
+$port = "3306"; // Es. 3306 (default per MySQL)
+$dbname = "learnenglisheasily";
+$user = "root";
+$password = "";
 
 try {
     // Creazione della connessione PDO 
-    $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
-    // Imposta la modalità errore PDO su eccezione
-    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    
+    global $conn;
+    $conn = "mysql:host=$host;port=$port;dbname=$dbname;charset=utf8mb4";
+
+    // Creazione dell'oggetto PDO
+    $pdo = new PDO($conn, $user, $password, [
+        PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION, // Attiva la gestione degli errori con eccezioni
+        PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC, // Imposta il fetch di default su array associativo
+        PDO::ATTR_EMULATE_PREPARES => false // Usa prepared statements nativi
+    ]);
+
     echo "connessione riuscita</br></br>";
 
     // Creazione della tabella
@@ -20,7 +30,7 @@ try {
         password VARCHAR(255) NOT NULL
     )";
 
-    $conn->exec($sql);
+    $pdo->exec($sql);
     echo "Tabella creata con successo.</br></br>";
 
     // Inserimento dei dati temporanei
@@ -67,10 +77,10 @@ try {
         ["Elisabetta", "Fiorini", "5A", "elisabetta.fiorini@example.com", md5("password40")]
     ]; 
 
-    $stmt = $conn->prepare("INSERT INTO user (name, surname, class, email, password) VALUES (:name, :surname, :class, :email, :password)");
+    $stmt = $pdo->prepare("INSERT INTO user (name, surname, class, email, password) VALUES (:name, :surname, :class, :email, :password)");
 
     foreach ($students as $student) {
-        $stmt->execute(params: [
+        $stmt->execute([
             ':name' => $student[0],
             ':surname' => $student[1],
             ':class' => $student[2],
@@ -79,14 +89,19 @@ try {
         ]);
     }
 
-    $conn = null;
+    $pdo = null;
     echo "Dati inseriti con successo.</br></br>";
 
     echo "creazione tabella commenti.</br></br>";
 
-    $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
-    // Imposta la modalità errore PDO su eccezione
-    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    $conn = "mysql:host=$host;port=$port;dbname=$dbname;charset=utf8mb4";
+
+    // Creazione dell'oggetto PDO
+    $pdo = new PDO($conn, $user, $password, [
+        PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION, // Attiva la gestione degli errori con eccezioni
+        PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC, // Imposta il fetch di default su array associativo
+        PDO::ATTR_EMULATE_PREPARES => false // Usa prepared statements nativi
+    ]);
 
     // Creazione della tabella
     $sql = "CREATE TABLE IF NOT EXISTS commenti (
@@ -95,7 +110,7 @@ try {
         id_utente INT
     )";
     
-    $conn->exec($sql);
+    $pdo->exec($sql);
     echo "tabella creata con successo.</br></br>";
 
     $commenti = [
@@ -145,7 +160,7 @@ try {
     
     
 
-    $stmt = $conn->prepare("INSERT INTO commenti (commento, id_utente) VALUES (:commento, :id_utente)");
+    $stmt = $pdo->prepare("INSERT INTO commenti (commento, id_utente) VALUES (:commento, :id_utente)");
 
     foreach ($commenti as $commento) {
         $stmt->execute(params: [

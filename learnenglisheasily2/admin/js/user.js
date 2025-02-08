@@ -10,6 +10,7 @@ fetch("./server/user.php", {
             <p>${data.message}</p>
             `;
         } else {
+            data = data.data;
             data.forEach(data => {
                 const row = document.createElement("tr");
                 row.innerHTML = `

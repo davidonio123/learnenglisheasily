@@ -48,6 +48,10 @@
         <div class="d-grid gap-2 d-md-block">
             <button class="btn btn-primary" type="submit" id="invio">esegui</button>
         </div>
+        <div>Risultato query: </div>
+        <div id="risultato">
+
+        </div>
     </div>
 </body>
 
