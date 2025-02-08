@@ -25,6 +25,6 @@ try {
     ]);
 
 } catch (PDOException $e) {
-    echo json_encode(['status' => -1, 'message' => 'Il server non risponde.</br>Se il problema persiste contattare un amministratore.']);
+    echo json_encode(['status' => -1, 'message' => 'Il server non risponde.</br>Se il problema persiste contattare un amministratore.</br>'. $e->getMessage()]);
     exit();
 }

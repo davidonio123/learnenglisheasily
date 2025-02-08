@@ -16,7 +16,8 @@
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/header.css">
     <!--SWITCH THEME-->
-    <link rel="stylesheet" href="./client/asserts/css/theme.css">
+    <link rel="stylesheet" href="./css/theme.css">
+
 
     <title>Admin</title>
 </head>
@@ -39,6 +40,14 @@
     </div>
     <div class="container">
         <h2>inserisci la tua query</h2>
+        <div id="status">
+        </div>
+        <div class="mb-3">
+            <textarea class="form-control" id="query" rows="3"></textarea>
+        </div>
+        <div class="d-grid gap-2 d-md-block">
+            <button class="btn btn-primary" type="submit" id="invio">esegui</button>
+        </div>
     </div>
 </body>
 

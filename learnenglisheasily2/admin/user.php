@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/header.css">
     <!--SWITCH THEME-->
-    <link rel="stylesheet" href="./client/asserts/css/theme.css">
+    <link rel="stylesheet" href="./css/theme.css">
 
 
     <title>Admin</title>
