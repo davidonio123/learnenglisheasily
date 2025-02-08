@@ -1,41 +1,37 @@
 <?php
 
-include("./server/db/db_connection.php");
-function getUserList(){
+include("./db/db_connection.php");
+function getUserList() {
+    global $pdo; // Assumiamo che $pdo sia la connessione PDO già inizializzata
 
-    global $conn;
+    try {
+        $query = "SELECT * FROM user";
+        $stmt = $pdo->prepare($query);
+        $stmt->execute();
+        $users = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-    $query = "SELECT * FROM user";
-    $query_run = mysqli_query($conn, $query);
-    if($query_run){
-
-        if(mysqli_num_rows($query_run) > 0){
-
-            $res = mysqli_fetch_all($query_run, MYSQLI_ASSOC);
-
+        if ($users) {
             $data = [
                 'status' => 200,
-                'message'=> 'user trovati con successo',
-                'data' => $res
+                'message' => 'User trovati con successo',
+                'data' => $users
             ];
-            return json_encode($data, JSON_PRETTY_PRINT);
-
-
-        }else{
+        } else {
             $data = [
                 'status' => 404,
-                'message'=> 'nessun user trovato'
+                'message' => 'Nessun user trovato'
             ];
-            return json_encode($data,JSON_PRETTY_PRINT);
         }
-    }else{
+    } catch (PDOException $e) {
         $data = [
             'status' => 500,
-            'message'=> 'Internel Server Error'
+            'message' => 'Errore del server: ' . $e->getMessage()
         ];
-        echo json_encode($data,JSON_PRETTY_PRINT);
     }
+
+    return json_encode($data, JSON_PRETTY_PRINT);
 }
+
 
 function getCommentList(){
 

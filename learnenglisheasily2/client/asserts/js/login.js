@@ -22,7 +22,7 @@ logIn.addEventListener('click', () => {
                 // startare la sessione
                 user = data.data;
 
-                fetch(dominio+'/server/start_session.php', {
+                fetch('./server/start_session.php', {
                     method: "POST",
                     body: JSON.stringify({
                         id: user.id,

@@ -13,7 +13,7 @@
                     <input type="password" name="password" class="form-control" id="password" aria-describedby="password" placeholder="Inserisci qui la tua password">
                 </div>
                 <div class="text lightGray down pb-3" style="color: red;" id="errorDiv"></div>
-                <button type="button" class="btn btn-primary button mainColor" id="logInBtn">Invia</button>
+                <button type="submit" class="btn btn-primary button mainColor" id="logInBtn">Invia</button>
                 <div class="text-center">
                     <span class="text lightGray red down">Password dimenticata?</span>
                     <a href="./recupera">Recupera</a>

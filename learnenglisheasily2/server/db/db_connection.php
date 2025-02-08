@@ -10,12 +10,7 @@ Database name: cfkehjye_learnenglishbyus
 User: cfkehjye_learnenglishbyus
 Password: BSogiQmzw9pF
 */
-
-$host = "localhost"; // Es. localhost o IP del server
-$port = "3306"; // Es. 3306 (default per MySQL)
-$dbname = "cfkehjye_learnenglishbyus";
-$user = "cfkehjye_learnenglishbyus";
-$password = "BSogiQmzw9pF";
+include("./db/db_date1.php");
 
 try {
     // Creazione della stringa DSN (Data Source Name)
@@ -28,9 +23,6 @@ try {
         PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC, // Imposta il fetch di default su array associativo
         PDO::ATTR_EMULATE_PREPARES => false // Usa prepared statements nativi
     ]);
-
-
-    echo json_encode(['status' => 200, 'message' => 'connessione al database riuscita']);
 
 } catch (PDOException $e) {
     echo json_encode(['status' => -1, 'message' => 'Il server non risponde.</br>Se il problema persiste contattare un amministratore.']);

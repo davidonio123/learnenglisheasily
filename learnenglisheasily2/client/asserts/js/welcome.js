@@ -1,19 +1,25 @@
 async function loadUserData() {
-    let data = await check(); // Aspetta il risultato della funzione
+    fetch('./server/check_session.php')
+        .then(response => response.json())
+        .then(data => {
+            console.log(data);
 
-    if (!data) return; // Evita errori se data è null
+            if (data.status != 200) {
+                window.location.href = "login";
+            } else {
+                let name = document.getElementById("UserName");
+                let surname = document.getElementById("UserSurname");
+                let clas = document.getElementById("UserClass");
+                let email = document.getElementById("UserEmail");
 
-    let name = document.getElementById("UserName");
-    let surname = document.getElementById("UserSurname");
-    let clas = document.getElementById("UserClass");
-    let email = document.getElementById("UserEmail");
-    
-    console.log(data.surname)
+                data = data.user;   
 
-    name.innerHTML = data.name;
-    surname.innerHTML = data.surname;
-    clas.innerHTML = data.class;
-    email.innerHTML = data.email;
+                name.innerHTML = data.name;
+                surname.innerHTML = data.surname;
+                clas.innerHTML = data.class;
+                email.innerHTML = data.email;
+            }
+        })
 }
 
 // Chiama la funzione dopo il caricamento della pagina
