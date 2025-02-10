@@ -35,6 +35,9 @@
                 <button class="menu-button">
                     <a href="./query.php" class="text lightGray down">query</a>
                 </button>
+                <button class="menu-button">
+                    <a href="./tmpDB.php" class="text lightGray down">tmp DB</a>
+                </button>
             </div>
         </div>
     </div>

@@ -42,21 +42,16 @@
         </div>
     </div>
     <div class="container">
-        <h2>commenti: </h2>
-        <table class="table table-sm">
-            <thead>
-                <tr>
-                    <th scope="col">id</th>
-                    <th scope="col">commento</th>
-                    <th scope="col">id_utente</th>
-                </tr>
-            </thead>
-            <tbody id="user">
-            </tbody>
-        </table>
+        <h2>tmp db: </h2>
+        <div class="row">
+            <div class="col-md"><button class="btn btn-primary m-3" type="button" id="all">Create all</button></div>
+            <div class="col-md"><button class="btn btn-primary m-3" type="button" id="user">Table user</button></div>
+            <div class="col-md"><button class="btn btn-primary m-3" type="button" id="commenti">Table commenti</button>
+            </div>
+        </div>
     </div>
 </body>
 
 </html>
 
-<script src="./js/commenti.js"></script>
+<script src="./js/tmpDB.js"></script>

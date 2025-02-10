@@ -35,6 +35,9 @@
                 <button class="menu-button">
                     <a href="./query.php" class="text lightGray down">query</a>
                 </button>
+                <button class="menu-button">
+                    <a href="./tmpDB.php" class="text lightGray down">tmp DB</a>
+                </button>
             </div>
         </div>
     </div>
@@ -50,10 +53,22 @@
         </div>
         <div>Risultato query: </div>
         <div id="risultato">
-
+        </div>
+        <h2>Json restituito: </h2>
+        <br>
+        <div id="risposta">
         </div>
     </div>
 </body>
+<style>
+    .wrong {
+        color: red;
+    }
+
+    .success {
+        color: green;
+    }
+</style>
 
 </html>
 

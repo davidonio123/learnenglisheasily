@@ -11,5 +11,5 @@ if($data->status != 200){
     die();
 }
 
-echo json_encode($data->data);
+echo json_encode($data);
 die();

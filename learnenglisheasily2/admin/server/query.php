@@ -36,7 +36,7 @@ try {
     $stmt->execute();
     $response = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-    echo json_encode(['status' => 200, 'message' => 'query eseguita correttamente', 'response' => $response]);
+    echo json_encode(['status' => 200, 'message' => 'query eseguita correttamente, ' , 'response' => $response,]);
 } catch (Exception $e) {
     echo json_encode(['status' => -1, 'message' => 'errore nell esecuzione della query</br>' . $e->getMessage()]);
 }

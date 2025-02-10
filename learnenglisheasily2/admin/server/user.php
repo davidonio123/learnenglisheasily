@@ -16,12 +16,5 @@ if ($requestMethod != "POST") {
     die();
 }
 
-$data = json_decode(getUserList());
-
-if($data->status != 200){
-    echo json_encode($data);
-    die();
-}
-
-echo json_encode($data);
+echo getUserList();
 die();
