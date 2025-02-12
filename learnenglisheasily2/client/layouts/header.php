@@ -48,19 +48,19 @@
       <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link text-center" href="./">Home</a>
+            <a class="nav-link text-center m-2" href="./">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-center" href="./feedback">Feedback</a>
+            <a class="nav-link text-center m-2" href="./feedback">Feedback</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-center" href="./comingsoon">Grammar</a>
+            <a class="nav-link text-center m-2" href="./comingsoon">Grammar</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-center" href="./comingsoon">Vocabulary</a>
+            <a class="nav-link text-center m-2" href="./comingsoon">Vocabulary</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-center" href="./aboutus">About Us</a>
+            <a class="nav-link text-center m-2" href="./aboutus">About Us</a>
           </li>
         </ul>
       </div>

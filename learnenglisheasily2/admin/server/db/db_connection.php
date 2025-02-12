@@ -10,7 +10,7 @@ Database name: cfkehjye_learnenglishbyus
 User: cfkehjye_learnenglishbyus
 Password: BSogiQmzw9pF
 */
-include("./db/db_date1.php");
+include("./db/db_date.php");
 
 try {
     // Creazione della stringa DSN (Data Source Name)
