@@ -32,39 +32,34 @@ function getUserList() {
     return json_encode($data, JSON_PRETTY_PRINT);
 }
 
+function getCommentList() {
+    global $pdo; // Assumendo che $pdo sia un'istanza di PDO
 
-function getCommentList(){
+    try {
+        $query = "SELECT * FROM commenti";
+        $stmt = $pdo->prepare($query);
+        $stmt->execute();
+        
+        $comments = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-    global $conn;
-
-    $query = "SELECT * FROM commenti";
-    $query_run = mysqli_query($conn, $query);
-    if($query_run){
-
-        if(mysqli_num_rows($query_run) > 0){
-
-            $res = mysqli_fetch_all($query_run, MYSQLI_ASSOC);
-
+        if ($comments) {
             $data = [
                 'status' => 200,
-                'message'=> mysqli_num_rows($query_run) . ' commenti trovati con successo',
-                'data' => $res
+                'message' => count($comments) . ' commenti trovati con successo',
+                'data' => $comments
             ];
-            return json_encode($data, JSON_PRETTY_PRINT);
-
-
-        }else{
+        } else {
             $data = [
                 'status' => -1,
-                'message'=> 'non ci sono comenti :)'
+                'message' => 'Non ci sono commenti :)'
             ];
-            return json_encode($data,JSON_PRETTY_PRINT);
         }
-    }else{
+    } catch (PDOException $e) {
         $data = [
             'status' => -1,
-            'message'=> 'Internel Server Error'
+            'message' => 'Errore del server: ' . $e->getMessage()
         ];
-        echo json_encode($data,JSON_PRETTY_PRINT);
     }
+    
+    return json_encode($data, JSON_PRETTY_PRINT);
 }

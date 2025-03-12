@@ -1,5 +1,5 @@
 <?php
-header("Content-Security-Policy: script-src 'self' https://cdnjs.cloudflare.com https://cdn.jsdelivr.net; base-uri 'none'; form-action 'none';"); //csp per la Content-Security-Policy (NON MODIFICARE)
+// header("Content-Security-Policy: script-src 'self' 'sha256-AbCdEfGhIjKlMnOpQrStUvWxYz1234567890=' https://cdnjs.cloudflare.com https://cdn.jsdelivr.net; base-uri 'none'; form-action 'none';");
 
 $dominio = '/progetti/learnenglisheasily/learnenglisheasily';
 $dominio = '';
