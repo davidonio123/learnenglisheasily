@@ -45,13 +45,7 @@
         <h2>user: </h2>
         <table class="table table-sm">
             <thead>
-                <tr>
-                    <th scope="col text-center">id</th>
-                    <th scope="col text-center">name</th>
-                    <th scope="col text-center">surname</th>
-                    <th scope="col text-center">class</th>
-                    <th scope="col text-center">email</th>
-                    <th scope="col text-center">password</th>
+                <tr id="headRow">
                 </tr>
             </thead>
             <tbody id="user">

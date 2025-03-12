@@ -1,4 +1,5 @@
-let tabella = document.getElementById("user");
+let tabella = document.getElementById("comment");
+let tableHead = document.getElementById("headRow");
 
 fetch("./server/commenti.php", {
     method: "POST"
@@ -11,14 +12,25 @@ fetch("./server/commenti.php", {
             `;
         } else {
             data = data.data;
-            data.forEach(data => {
+
+            //stampa intestazione tabella
+            for (let key in data[0]) {
+                const th = document.createElement("th");
+                th.classList.add("text-center");
+                th.classList.add("col");
+                th.innerHTML = key;
+                tableHead.appendChild(th);
+            }
+
+            //inserimento tutti i dati
+            data.forEach(obj => {
                 const row = document.createElement("tr");
-                row.innerHTML = `
-                    <td class="text-center">${data.id}</td>
-                    <td>${data.commento}</td>
-                    <td class="text-center">${data.id_utente}</td>
-                `;
+                let object = ``;
+                for (let key in obj) {
+                    object += `<td class="text-center">${obj[key]}</td>`;
+                }
+                row.innerHTML = object;
                 tabella.appendChild(row);
-            });
+            })
         }
     })

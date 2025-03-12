@@ -45,13 +45,10 @@
         <h2>commenti: </h2>
         <table class="table table-sm">
             <thead>
-                <tr>
-                    <th scope="col">id</th>
-                    <th scope="col">commento</th>
-                    <th scope="col">id_utente</th>
+                <tr id="headRow">
                 </tr>
             </thead>
-            <tbody id="user">
+            <tbody id="comment">
             </tbody>
         </table>
     </div>

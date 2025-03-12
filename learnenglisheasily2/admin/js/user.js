@@ -1,4 +1,5 @@
 let tabella = document.getElementById("user");
+let tableHead = document.getElementById("headRow");
 
 fetch("./server/user.php", {
     method: "POST"
@@ -11,18 +12,25 @@ fetch("./server/user.php", {
             `;
         } else {
             data = data.data;
-            data.forEach(data => {
-                const row = document.createElement("tr");
-                row.innerHTML = `
-                    <td class="text-center">${data.id}</td>
-                    <td class="text-center">${data.name}</td>
-                    <td class="text-center">${data.surname}</td>
-                    <td class="text-center">${data.class}</td>
-                    <td class="text-center">${data.email}</td>
-                    <td class="text-center">${data.password}</td>
-                `;
-                tabella.appendChild(row);
+
+            //stampa intestazione tabella
+            for (let key in data[0]) {
+                const th = document.createElement("th");
+                th.classList.add("text-center");
+                th.classList.add("col");
+                th.innerHTML = key;
+                tableHead.appendChild(th);
             }
-            );
+
+            //inserimento tutti i dati
+            data.forEach(obj => {
+                const row = document.createElement("tr");
+                let object = ``;
+                for (let key in obj) {
+                    object += `<td class="text-center">${obj[key]}</td>`;
+                }
+                row.innerHTML = object;
+                tabella.appendChild(row);
+            })
         }
     })
