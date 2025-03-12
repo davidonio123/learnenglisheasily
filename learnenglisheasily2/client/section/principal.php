@@ -3,7 +3,7 @@
         <!--            CONTENUTO            -->
         <div class="col-lg-4 d-flex justify-content-center align-items-center">
             <div class="container wow fadeIn animate__slower">
-                <h1 class="text-center text mainColor">Learn English easily with us</h1>
+                <h1 class="text-center text mainColor">Learn English easly with us</h1>
                 <h2 class="text-center text lightGray m-4">Impara l'inglese giocando e divertendoti con mappe, giochi,
                     quiz, e tanto altro ancora…</h2>
                 <div class="row text-center ">
