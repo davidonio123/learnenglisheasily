@@ -12,7 +12,8 @@ function user($conn)
             surname VARCHAR(50) NOT NULL,
             class VARCHAR(5) NOT NULL,
             email VARCHAR(100) NOT NULL,
-            password VARCHAR(255) NOT NULL
+            password VARCHAR(255) NOT NULL,
+            creation_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
         )";
     $conn->query($sql);
 
@@ -74,7 +75,8 @@ function commenti($conn)
     $sql = "CREATE TABLE IF NOT EXISTS commenti (
             id INT AUTO_INCREMENT PRIMARY KEY,
             commento TEXT,
-            id_utente INT
+            id_utente INT,
+            creation_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
         )";
     $conn->query($sql);
 
@@ -147,6 +149,6 @@ try {
     echo json_encode(['status' => 200, 'message' => 'Operazione completata con successo.']);
 } catch (Exception $e) {
     echo json_encode(['status' => -1, 'message' => 'Errore del database: ' . $e->getMessage()]);
+} finally {
+    $conn->close();
 }
-
-$conn->close();

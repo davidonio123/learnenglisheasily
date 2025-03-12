@@ -66,6 +66,8 @@ function getCommentList() {
             'status' => -1,
             'message' => 'Errore del server: ' . $e->getMessage()
         ];
+    } finally {
+        $conn->close();
     }
 
     return json_encode($data, JSON_PRETTY_PRINT);

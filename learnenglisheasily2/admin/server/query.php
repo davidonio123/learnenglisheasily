@@ -61,4 +61,6 @@ try {
         'status' => -1,
         'message' => 'Errore nell\'esecuzione della query: ' . $e->getMessage()
     ]);
+}  finally {
+    $conn->close();
 }
