@@ -1,5 +1,5 @@
 <?php
-include("./db/db_date.php");
+include("./db/db_date1.php");
 
 try {
     // Creazione della connessione MySQLi
