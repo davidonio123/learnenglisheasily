@@ -1,6 +1,9 @@
 <?php
 
-function user($pdo)
+header("Content-Type: application/json");
+include("./db/db_connection.php");
+
+function user($conn)
 {
     // Creazione della tabella
     $sql = "CREATE TABLE IF NOT EXISTS user (
@@ -11,7 +14,7 @@ function user($pdo)
             email VARCHAR(100) NOT NULL,
             password VARCHAR(255) NOT NULL
         )";
-    $pdo->exec($sql); // Esegui direttamente senza fetchAll()
+    $conn->query($sql);
 
     // Inserimento dei dati temporanei
     $students = [
@@ -57,20 +60,15 @@ function user($pdo)
         ["Elisabetta", "Fiorini", "5A", "elisabetta.fiorini@example.com", md5("ciaomamma")]
     ];
 
-    $stmt = $pdo->prepare("INSERT INTO user (name, surname, class, email, password) VALUES (:name, :surname, :class, :email, :password)");
+    $stmt = $conn->prepare("INSERT INTO user (name, surname, class, email, password) VALUES (?, ?, ?, ?, ?)");
 
     foreach ($students as $student) {
-        $stmt->execute([
-            ':name' => $student[0],
-            ':surname' => $student[1],
-            ':class' => $student[2],
-            ':email' => $student[3],
-            ':password' => $student[4]
-        ]);
+        $stmt->bind_param("sssss", $student[0], $student[1], $student[2], $student[3], $student[4]);
+        $stmt->execute();
     }
 }
 
-function commenti($pdo)
+function commenti($conn)
 {
     // Creazione della tabella
     $sql = "CREATE TABLE IF NOT EXISTS commenti (
@@ -78,7 +76,7 @@ function commenti($pdo)
             commento TEXT,
             id_utente INT
         )";
-    $pdo->exec($sql); // Esegui direttamente senza fetchAll()
+    $conn->query($sql);
 
     $commenti = [
         [1, 'Buono.'],
@@ -125,36 +123,30 @@ function commenti($pdo)
         [16, 'Ideale per chi cerca un prodotto economico e funzionale. Non aspettatevi prestazioni elevate, ma fa il suo dovere.']
     ];
 
-    $stmt = $pdo->prepare("INSERT INTO commenti (commento, id_utente) 
-                           VALUES (:commento, :id_utente)");
+    $stmt = $conn->prepare("INSERT INTO commenti (commento, id_utente) VALUES (?, ?)");
 
     foreach ($commenti as $commento) {
-        $stmt->execute([
-            ':commento' => $commento[1],
-            ':id_utente' => $commento[0]
-        ]);
+        $stmt->bind_param("si", $commento[1], $commento[0]);
+        $stmt->execute();
     }
 }
 
 try {
-    include("./db/db_connection.php");
-
     $input = file_get_contents("php://input");
     $data = json_decode($input, true);
 
     if ($data["request"] == "all") {
-        user($pdo);
-        commenti($pdo);
+        user($conn);
+        commenti($conn);
     } else if ($data["request"] == "user") {
-        user($pdo);
+        user($conn);
     } else if ($data["request"] == "commenti") {
-        commenti($pdo);
+        commenti($conn);
     }
 
     echo json_encode(['status' => 200, 'message' => 'Operazione completata con successo.']);
-
-} catch (PDOException $e) {
+} catch (Exception $e) {
     echo json_encode(['status' => -1, 'message' => 'Errore del database: ' . $e->getMessage()]);
 }
 
-$pdo = null;
+$conn->close();

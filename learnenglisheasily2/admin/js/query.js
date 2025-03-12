@@ -1,7 +1,15 @@
-function formatData(data) {
-    return data.map(person => {
-        return `</br>    ID: ${person.id}</br>    Nome: ${person.name} ${person.surname}</br>    Classe: ${person.class}</br>    Email: ${person.email}</br>    Password: ${person.password}</br>`;
-    }).join('</br>');
+function getKeyValueString(array) {
+    let result = '';
+    array.forEach(obj => {
+        for (let key in obj) {
+            result += `${key}: ${obj[key]}</br>`;
+        }
+        result += '-----------------</br>'; // Separatore per chiarezza (facoltativo)
+    });
+
+    if(result == '')
+        return 'Empty response';
+    return result.trim(); // Rimuove spazi bianchi finali
 }
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -25,12 +33,12 @@ document.addEventListener("DOMContentLoaded", () => {
                     risultato.classList.remove("success");
                 } else {
                     risultato.innerHTML = data.message;
-                    risultato.classList.add("success");
-                    risultato.classList.remove("wrong");
-
-                    let output = document.getElementById("risposta");
-                    output.innerHTML = JSON.stringify(formatData(data.response), null, 4);
-
+                        risultato.classList.add("success");
+                        risultato.classList.remove("wrong");
+                    if (data.response != -1) {
+                        let output = document.getElementById("risposta");
+                        output.innerHTML = JSON.stringify(getKeyValueString(data.response), null, 4);
+                    }
 
                 }
             })
